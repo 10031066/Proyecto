@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<?php session_start(); 
+	include 'conexion.php';
+	
+	if(isset($_POST['usuario'])){
+		login($_POST['usuario'],$_POST['pass']);
+	}else if(isset($_GET['salir'])){
+		session_destroy();
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,15 +78,15 @@
                                       <?php 
 												if(isset($_SESSION['user'])){
 													?>
-									            <li role="presentation" class="active"><a href="#" class="color-1"><img src="img/carrito.jpg" id="img1" width="35" height="15">Mi carrito <span class="badge">2</span></a></li>
-												<a href="LogOff.php">Salir</a>
+									            <li role="presentation" class="active"><a href="carrito.php" class="color-1"><img src="img/carrito.jpg" id="img1" width="35" height="15">Mi carrito <span class="badge">2</span></a></li>
+												<a href="index.php/?a=salir">Salir</a>
 										<?php		}else{
 												  
 											  ?>
 									  <li class="dropdown "><a href="#" class="dropdown-toggle color-1" data-toggle="dropdown" role="button" aria-expanded="false">Iniciar sesion <span class="caret"></span></a>
                                           <ul class="dropdown-menu" role="menu" class="ca-menu" id="desplegable">
                                               
-											  <form ACTION="login.php" method="POST">
+											  <form ACTION="index.php" method="POST">
 												<li><P ALIGN=center>Usuario</P></a></li>
 												<li><input type="usuario" class="form-control" name="usuario"></li>
 												<li><P ALIGN=center></span> Contraseña</P></a></li>
