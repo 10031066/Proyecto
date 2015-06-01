@@ -43,9 +43,9 @@
 			iniciaSesion($usuario);
 			
 			$SQLi->close();
-			echo "logueado";
+			echo "<script type='text/javascript'>alert('Bienvenido Usuario');</script>";
 		}else{
-			echo "El Usuario y contraseña no coinciden ".$usuario." ->".$pass;
+			echo "<script type='text/javascript'>alert('El Usuario y contraseña no coinciden');</script>";
 			$SQLi->close();
 		}
 		
