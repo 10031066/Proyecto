@@ -1,0 +1,120 @@
+
+
+CREATE DATABASE proyectoMuebles
+
+
+CREATE TABLE clientes 
+(
+	idcte int auto_increment,
+	nomcte varchar(30),
+	apepat varchar(30),
+	apemat varchar(30),
+	dircte varchar (100),
+	telcte char(10),
+	mailcte varchar(30),
+	gencte char(1),
+	edacte char(3),
+	CONSTRAINT pk_cte PRIMARY KEY(idcte)
+)
+
+
+CREATE TABLE empleado
+(
+	idusr int auto_increment,
+	nomusr varchar(30),
+	apepat varchar(30),
+	apemat varchar(30),
+	crgusr varchar(30),
+	dirusr varchar(100),
+	telusr char(10),
+	mailusr  varchar(30),
+	genusr char(1),
+	edausr char(3),
+	CONSTRAINT pk_cte PRIMARY KEY(idusr)
+
+
+)
+
+CREATE TABLE articulo
+(
+	id int auto_increment,
+	marca varchar(30),
+	descripcion varchar(100),
+	precio decimal,
+	CONSTRAINT pk_sala PRIMARY KEY(id)
+)
+
+
+
+
+
+//procedimientos almacenados
+
+//procedimiento para clientes
+
+CREATE PROCEDURE a(in idcte int, in nomcte varchar(30),
+in apepat varchar(30), in apemat varchar(30), in dircte varchar(100), 
+in telcte char(10), in mailcte varchar(30), gencte char(1),
+edacte char(3), in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO clientes (nomcte,apepat,apemat,dircte,telcte,mailcte,gencte,edacte)
+		values (nomcte,apepat,apemat,dircte,telcte,mailcte,gencte,edacte);
+	ELSEIF opc = 2 THEN
+		UPDATE clientes SET nomcte=nomcte,apepat=apepat,apemat=apemat,dircte=dircte,telcte=telcte,mailcte=mailcte,gencte=gencte,edacte=edacte
+		WHERE idcte = idcte;
+	ELSEIF opc = 3 THEN
+		DELETE FROM clientes WHERE idcte = idcte;
+
+	END IF;
+END//
+ 
+
+//procedimiento para empleado
+CREATE PROCEDURE abcempleado(in idusr int, in nomusr varchar(30),
+in apepat varchar(30), in apemat varchar(30), in dirusr varchar(100), 
+in telusr char(10), in mailusr varchar(30), genusr char(1),
+edausr char(3), in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO empleado (nomusr,apepat,apemat,dirusr,telusr,mailusr,genusr,edausr)
+		values (nomusr,apepat,apemat,dirusr,telusr,mailusr,genusr,edausr);
+	ELSEIF opc = 2 THEN
+		UPDATE empleado SET nomusr=nomusr,apepat=apepat,apemat=apemat,dirusr=dirusr,telusr=telusr,mailusr=mailusr,genusr=genusr,edausr=edausr
+		WHERE idusr = idusr;
+	ELSEIF opc = 3 THEN
+		DELETE FROM empleado WHERE idcte = idusr;
+
+	END IF;
+END// 
+
+
+//procedimiento para articulos
+CREATE PROCEDURE abcarticulo(in id int, in marca varchar(30),
+in descripcion varchar(100), in precio decimal,  in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO articulo (marca,descripcion,precio)
+		values (marca,descripcion,precio);
+	ELSEIF opc = 2 THEN
+		UPDATE articulo SET marca=marca,descripcion=descripcion,precio=precio
+		WHERE id = id;
+	ELSEIF opc = 3 THEN
+		DELETE FROM articulo WHERE id = id;
+
+	END IF;
+END// 
+
+'adriana','jaime','martinez','lopz','56885646','asdf@asdf.cm','fem',
+
+
+
+
+
+
+	
+
+
+
+
+

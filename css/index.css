@@ -1,0 +1,5 @@
+.container{
+	/*como estoy dentro de estilo salgo un nivel para poner
+	la direccion de las imagenes.. para eso sirve el punto punto (..)*/
+	background-image: url("../img/yo.jpg");
+}
