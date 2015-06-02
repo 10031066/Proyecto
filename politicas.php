@@ -10,13 +10,15 @@
       <img src="img/public1.png" width="300" />
       <br>
       <img src="img/public2.png" width="300" />
+      <br>
+      <img src="img/public.png" width="300" />
 
 
       </div>
     <div class="col-md-8">
     <h4><font color="#DF3A01">EL AVISO DE PRIVACIDAD FORMA PARTE DEL USO DE ESTE SITIO WEB </font></h4>
       <HR >
-      <P style="text-align: justify;"><span style="color:#BDBDBD">
+      <P style="text-align: justify;"><span style="color:#DF3A01">
       RESPONSABLE <BR>
 
       <span style="color:#424242">
@@ -31,7 +33,7 @@
         así como el tratamiento no autorizado de sus datos personales. 
           <br><br></P>
 
-      <P style="text-align: justify;"><span style="color:#BDBDBD">
+      <P style="text-align: justify;"><span style="color:#DF3A01">
       DATOS PERSONALES<BR>
 
         <span style="color:#424242">
@@ -47,7 +49,7 @@
         físicas, para evitar su daño, pérdida, alteración, destrucción, uso, acceso o divulgación indebida. 
           <br><br></P>
 
-      <P style="text-align: justify;"><span style="color:#BDBDBD">
+      <P style="text-align: justify;"><span style="color:#DF3A01">
       TRANSFERENCIA DE DATOS<BR>
 
         <span style="color:#424242">
@@ -63,7 +65,7 @@
         transcurrido dicho término, acepta y autoriza a Bazaya México, S. de R.L. de C.V. a la transferencia de los mismos.
           <br><br></P>
 
-      <P style="text-align: justify;"><span style="color:#BDBDBD">
+      <P style="text-align: justify;"><span style="color:#DF3A01">
       QUÉ SON LOS COOKIES Y CÓMO SE UTILIZAN<BR>
 
 
@@ -86,7 +88,7 @@
          cómo hacer que el navegador le notifique cuando recibe un nuevo cookie o cómo deshabilitar todos los cookies. 
           <br><br></P>
 
-      <P style="text-align: justify;"><span style="color:#BDBDBD">
+      <P style="text-align: justify;"><span style="color:#DF3A01">
       USO DE LA INFORMACIÓN<BR>
 
         <span style="color:#424242">
@@ -102,11 +104,11 @@
          El usuario puede modificar su perfil en cualquier momento utilizando su número de usuario y contraseña. 
           <br><br></P>
 
-      <P style="text-align: justify;"><span style="color:#BDBDBD">
+      <P style="text-align: justify;"><span style="color:#DF3A01">
       LIMITACIÓN DE USO Y DIVULGACIÓN DE INFORMACIÓN<BR>
 
         <span style="color:#424242">
-        
+
         En nuestro programa de notificación de promociones, ofertas y servicios a través de correo electrónico, 
         solo Linio tiene acceso a la información recabada. Este tipo de publicidad se realiza mediante avisos y 
         mensajes promocionales de correo electrónico, los cuales solo serán enviados a usted y a aquellos contactos 
