@@ -2,67 +2,7 @@
 	include 'top.php';
 ?>
 
-    <div class="row">
-      <div class="col-md-12">
-          
-         <nav class="navbar navbar-default" role="navigation">
-
-         <div class="col-md-2">
-            <ul class="nav navbar-nav">
-              <a href="#" role="presentation" class="dropdown-toggle" data-toggle="dropdown">Sala<b class="caret" data-hover="dropdown"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><P ALIGN=center>Sofa</a></li>
-                  <li><a href="#"><P ALIGN=center>Sillones</a></li>
-                  <li><a href="#"><P ALIGN=center>Sala de TV</a></li>
-                </ul>             
-            </ul>
-          </div>
-
-          <div class="col-md-2">
-            <ul class="nav navbar-nav">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Comedor<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><P ALIGN=center>Madera</a></li>
-                  <li><a href="#"><P ALIGN=center>Metal</a></li>
-                  <li><a href="#"><P ALIGN=center>Jardin</a></li>
-                </ul>             
-            </ul>
-          </div>
-
-         <div class="col-md-2">
-            <ul class="nav navbar-nav">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recamara<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><P ALIGN=center>Individual</a></li>
-                  <li><a href="#"><P ALIGN=center>Matrimonial</a></li>
-                  <li><a href="#"><P ALIGN=center>Literas</a></li>
-                </ul>             
-            </ul>
-          </div>
-
-          <div class="col-md-2">
-            <ul class="nav navbar-nav">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Estudio y oficina<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><P ALIGN=center>Escritorios</a></li>
-                  <li><a href="#"><P ALIGN=center>Libreros</a></li>
-                  <li><a href="#"><P ALIGN=center>Mesas ajustables</a></li>
-                  <li><a href="#"><P ALIGN=center>Sillas ejecutivas</a></li>
-                </ul>             
-            </ul>
-          </div>
-
-
-      </div>          
-    </div><!-- barra secundaria-->
-
-    <div class="row">
-    <div class="col-md-12">
-          <font color="white">separacion</font>
-          <font color="white">separacion</font>
-    </div>
-          
-    </div>
+  
 
   <div class="row">
     <div class="col-md-12">
