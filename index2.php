@@ -1,12 +1,3 @@
-<?php session_start(); 
-	include 'conexion.php';
-	
-	if(isset($_POST['usuario'])){
-		login($_POST['usuario'],$_POST['pass']);
-	}else if(isset($_GET['salir'])){
-		session_destroy();
-	}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,7 +41,7 @@
     })();
   </script>
 
-<style type="text/css">
+   <style type="text/css">
       
       * {
         margin:0px;
@@ -103,13 +94,15 @@
       }
       
     </style>
-
 	<style type="text/css"> div{ border: 1px solid black; } </style>
 
 	
 </head>
 
+
   <body style="background:#FFFFFF">
+
+
 
      <div class="container text-center">
 
@@ -128,31 +121,18 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right" class="ca-menu">
-                                      <?php 
-												if(isset($_SESSION['user'])){
-													?>
-									            <li role="presentation" class="active"><a href="carrito.php" class="color-1"><img src="img/carrito.jpg" id="img1" width="35" height="15">Mi carrito <span class="badge">2</span></a></li>
-												<a href="index.php/?a=salir">Salir</a>
-										<?php		}else{
-												  
-											  ?>
-									  <li class="dropdown "><a href="#" class="dropdown-toggle color-1" data-toggle="dropdown" role="button" aria-expanded="false">Iniciar sesion <span class="caret"></span></a>
+                                     <li role="presentation" class="active"><a href="#" class="color-1"><img src="img/carrito.jpg" id="img1" width="35" height="15">Mi carrito <span class="badge">2</span></a></li>
+                                      <li class="dropdown "><a href="#" class="dropdown-toggle color-1" data-toggle="dropdown" role="button" aria-expanded="false">Iniciar sesion <span class="caret"></span></a>
                                           <ul class="dropdown-menu" role="menu" class="ca-menu" id="desplegable">
-                                              
-											  <form ACTION="index.php" method="POST">
-												<li><P ALIGN=center>Usuario</P></a></li>
-												<li><input type="usuario" class="form-control" name="usuario"></li>
-												<li><P ALIGN=center></span> Contraseña</P></a></li>
-												<li><input type="password" class="form-control" name="pass"></li>
-												<li><input class="btn btn-primary" type="submit" value="Acceder"></li>
-											  </form>
+                                              <li><P ALIGN=center>Usuario</P></a></li>
+                                              <li><input type="usuario" class="form-control" id="usuario"></li>
+                                              <li><P ALIGN=center></span> Contraseña</P></a></li>
+                                              <li><input type="contraseña" class="form-control" id="contraseña"></li>
+                                              <li><input class="btn btn-primary" type="submit" value="Acceder"></li>
                                               <li class="divider"></li>
-                                              <li><a href="clientes.php"><P ALIGN=center></span> Registrarme</a></li>
-											  
+                                              <li><a href="#"><P ALIGN=center></span> Registrarme</a></li>
                                          </ul>
                                      </li>
-									 <?php
-									} ?>
                                 </ul>
                             </div><!-- /.navbar-collapse -->
                         </div><!-- /.container-fluid -->
@@ -172,10 +152,11 @@
 	
 
 		<div class="row">
-      <div class="col-md-12">
-          
-        <div id="header">
+			<div class="col-md-12">
+	    		
+	    	<div id="header">
       <ul class="nav">
+        <li><a href="">Inicio</a></li>
         <li><a href="">Servicios</a>
           <ul>
             <li><a href="">Submenu1</a></li>
@@ -191,23 +172,6 @@
             </li>
           </ul>
         </li>
-
-        <li><a href="">Servicios</a>
-          <ul>
-            <li><a href="">Submenu1</a></li>
-            <li><a href="">Submenu2</a></li>
-            <li><a href="">Submenu3</a></li>
-            <li><a href="">Submenu4</a>
-              <ul>
-                <li><a href="">Submenu1</a></li>
-                <li><a href="">Submenu2</a></li>
-                <li><a href="">Submenu3</a></li>
-                <li><a href="">Submenu4</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
         <li><a href="">Acerca de</a>
           <ul>
             <li><a href="">Submenu1</a></li>
@@ -216,19 +180,12 @@
             <li><a href="">Submenu4</a></li>
           </ul>
         </li>
-
-        <li><a href="">Acerca de</a>
-          <ul>
-            <li><a href="">Submenu1</a></li>
-            <li><a href="">Submenu2</a></li>
-            <li><a href="">Submenu3</a></li>
-            <li><a href="">Submenu4</a></li>
-          </ul>
-        </li>
-
+        <li><a href="">Contacto</a></li>
       </ul>
     </div>
     </div>
+    
+
 
 	<div class="row">
 		<div class="col-md-12">
@@ -300,23 +257,28 @@
 		</div>
 
 		<div class="col-md-4">
-		<img src="img/ofertas/comedor.png" id="img1" width="300" height="250">
+
+     <img src="img/ofertas/comedor.png" width="250" onmouseover="javascript:this.height=500;this.width=500"  onmouseout="javascript:this.width=250;this.height=250"/>
+
+		
 
 		<div class="col-md-12">
-		<img src="img/ofertas/keia.jpg" id="img1" width="300" height="250">
+       <img src="img/ofertas/keia.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  onmouseout="javascript:this.width=250;this.height=250"/>
+		
 		</div>
 
 		</div>
 
 		<div class="col-md-4">
-		<img src="img/ofertas/antesydespues.jpg" id="img1" width="900" height="400">
+       <img src="img/ofertas/antesydespues.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  onmouseout="javascript:this.width=250;this.height=250"/>
+		
 		</div>
 
 		<div class="col-md-4">
-		<img src="img/ofertas/comedor.png" id="img1" width="300" height="250">
+		 <img src="img/ofertas/comedor.png" width="250" onmouseover="javascript:this.height=500;this.width=500"  onmouseout="javascript:this.width=250;this.height=250"/>
 
 		<div class="col-md-12">
-		<img src="img/ofertas/keia.jpg" id="img1" width="300" height="250">
+		 <img src="img/ofertas/keia.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  onmouseout="javascript:this.width=250;this.height=250"/>
 		</div>
 		</div>
 		
@@ -333,6 +295,8 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h3>---------------- TIENDAS OFICIALES------------------</h3>
+
+      
 		<ul class="breadcrumb">
           <li><img src="img/tiendas/coppel.jpg" id="img1" width="150" height="100"></a><span class="divider"></span></li>
           <li><img src="img/tiendas/famsa.jpg" id="img1" width="90" height="90"></a> <span class="divider"></span></li>
@@ -499,6 +463,7 @@
 		<div class="col-md-3">
     		<P ALIGN=center>
     		<FONT FACE="times new roman"><span style="color:#088A08">SERVICIO A CLIENTES<BR></font>
+    		<span style="color:#BDBDBD">Preguntas Frecuencias?<BR>
     		<span style="color:#BDBDBD">Contactanos<BR>
     		<span style="color:#BDBDBD">Politicas de Privacidad<BR>
     		<span style="color:#BDBDBD">Cancelaciones<BR>
