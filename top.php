@@ -106,7 +106,7 @@
 
      <div class="row">
      	<div class="col-md-4">
-	    		<img src="img/logo1.png"alt="..." id="img1" width="250" height="300" class="img-circle">
+	    		<a href="index.php"><img src="img/logo1.png"alt="..." id="img1" width="250" height="300" class="img-circle"></a>
 		</div>
 
          <div class="col-md-8">
