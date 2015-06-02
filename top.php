@@ -175,16 +175,3 @@
     </div>
     </div>
 
-	<div class="row">
-		<div class="col-md-12">
-	    		<font color="white">separacion</font><br>
-			<font color="white">separacion</font>
-		</div>
-					
-	</div>
-  <div class="row">
-    <div class="col-md-12">
-          <font color="white">separacion</font>
-    </div>
-          
-  </div>
