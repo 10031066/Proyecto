@@ -1,5 +1,14 @@
 <?php
 	require 'PHPMailerAutoload.php';
+	function registraEmpresa($nombre,$direccion,$telefono,$email1,$email2){
+		if($email1==$email2){
+			$pass = gererarPass();
+			$query = "call abcempresa (1,'".$nombre."','".$direccion."','"
+			.$telefono."','".$email1."','".$pass."')";
+		}else{
+			echo "Ambas direcciones de correo son distintas\n";
+		}
+	}
 	
 	function registrarCliente($nombre,$apellidoP,$apellidoM,$direccion,$telefono,$email1,$email2,$edad,$genero){
 		if($email1==$email2){
@@ -7,18 +16,7 @@
 			$query = "call abcclientes (1,'".$nombre."','".$apellidoP."','".$apellidoM."','".$direccion."','"
 			.$telefono."','".$email1."','".$genero."','".$edad."',1,'".$pass."')";
 			
-			$SQLi = new mysqli("localhost","root",'','proyectomuebles');
-			if ($SQLi->connect_error) {
-				die('Error de Conexión (' . $SQLi->connect_errno . ') '
-				. $SQLi->connect_error);
-			}
-			//echo $query;
-			
-			if($SQLi->query($query)==true){
-				echo "<br>Se ha registrado con exito<br>";
-			}else{
-				echo "<br>Ha ocurrido un error al registrar<br>";
-			}
+			ejecutaQuery($query);
 			
 			$query = "Select idcte from clientes where mailcte='".$email1."'";
 			$resultado = $SQLi->query($query);
@@ -33,6 +31,21 @@
 			echo "Ambas direcciones de correo son distintas\n";
 		}
 		
+	}
+	
+	function ejecutaQuery($query){
+		$SQLi = new mysqli("localhost","root",'','proyectomuebles');
+			if ($SQLi->connect_error) {
+				die('Error de Conexión (' . $SQLi->connect_errno . ') '
+				. $SQLi->connect_error);
+			}
+			//echo $query;
+			
+			if($SQLi->query($query)==true){
+				echo "<br>Se ha registrado con exito<br>";
+			}else{
+				echo "<br>Ha ocurrido un error al registrar<br>";
+			}
 	}
 	
 	function login($usuario,$pass){
