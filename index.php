@@ -4,6 +4,8 @@
 	if(isset($_POST['usuario'])){
 		login($_POST['usuario'],$_POST['pass']);
 	}else if(isset($_GET['salir'])){
+		echo "<script type='text/javascript'>alert('Adios');</script>";
+		session_unset();
 		session_destroy();
 	}
 	include 'top.php';

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -124,7 +123,7 @@
 												if(isset($_SESSION['user'])){
 													?>
 									            <li role="presentation" class="active"><a href="carrito.php" class="color-1"><img src="img/carrito.jpg" id="img1" width="35" height="15">Mi carrito <span class="badge">2</span></a></li>
-												<a href="index.php/?a=salir">Salir</a>
+												<a href="index.php?salir=si">Salir</a>
 										<?php		}else{
 												  
 											  ?>
