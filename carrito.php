@@ -30,9 +30,21 @@
           <h4><font >Eliminar</font></h4>
           <HR >
     </div>
-
-
           
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		
+	</div>
+
+	<div class="col-md-4">
+		<input class="btn btn-primary" type="submit" value="Pagar" >
+	</div>
+
+	<div class="col-md-4">
+		
+	</div>
 </div>
 
 
