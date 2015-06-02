@@ -159,7 +159,7 @@
                         <div class="col-md-12">
 	    		<ul class="nav nav-tabs  nav-justified">
 			  	<li role="presentation" class="active"><a href="#"><img src="img/sucursales.jpg" id="img1" width="30" height="15">Sucursales</a></li>
-			  	<li role="presentation" class="active"><a href="#"><img src="img/pedidos.jpg" id="img1" width="30" height="15">Vende con nosotros</a></li>
+			  	<li role="presentation" class="active"><a href="vende_nosotros.php"><img src="img/pedidos.jpg" id="img1" width="30" height="15">Vende con nosotros</a></li>
 			  	<li role="presentation" class="active"><a href="#"><img src="img/pedido.jpg" id="img1" width="30" height="15">Mis pedidos</a></li>
 				</ul>
 			</div>
