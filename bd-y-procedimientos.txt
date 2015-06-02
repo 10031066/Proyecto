@@ -1,0 +1,227 @@
+
+
+CREATE DATABASE MueblesPW
+
+
+CREATE TABLE clientes 
+(
+	idcte int auto_increment,
+	nomcte varchar(30),
+	apepat varchar(30),
+	apemat varchar(30),
+	dircte varchar (100),
+	telcte char(10),
+	mailcte varchar(30),
+	gencte char(1),
+	edacte char(3),
+	CONSTRAINT pk_cte PRIMARY KEY(idcte)
+
+
+)engine=myisam;
+
+
+CREATE TABLE usurio
+(
+	idusr int auto_increment,
+	nomusr varchar(30),
+	apepat varchar(30),
+	apemat varchar(30),
+	crgusr varchar(30),
+	dirusr varchar(100),
+	telusr char(10),
+	mailusr  varchar(30),
+	genusr char(1),
+	edausr char(3),
+	CONSTRAINT pk_cte PRIMARY KEY(idusr)
+
+
+)engine=myisam;
+
+
+CREATE TABLE sala
+(
+	idsala int auto_increment,
+	marcSala varchar(30),
+	descriSala varchar(100),
+	precioSala decimal,
+	CONSTRAINT pk_sala PRIMARY KEY(idsala)
+)engine=myisam;
+
+CREATE TABLE comedor
+( 
+	idcomedor int auto_increment,
+	marcComedor varchar(30),
+	descriComedor varchar(100),
+	precioComedor decimal,
+	CONSTRAINT pk_comedor PRIMARY KEY(idcomedor)
+)engine=myisam;
+
+CREATE TABLE recamara
+(
+	idrecamara int auto_increment,
+	marcRecamara varchar(30),
+	descriRecamara  varchar(100),
+	precioRecamara  decimal,
+	CONSTRAINT pk_comedor PRIMARY KEY(idRecamara)
+	
+)engine=myisam;
+
+CREATE TABLE salaTV
+(
+	idstv int auto_increment,
+	marcSTV varchar(30),
+	descriSTV  varchar(100),
+	precioSTV  decimal,
+	CONSTRAINT pk_comedor PRIMARY KEY(idstv)
+	
+)engine=myisam;
+
+CREATE TABLE estudio
+(
+	idestudio int auto_increment,
+	marcEstudio varchar(30),
+	descriEstudio  varchar(100),
+	precioEstudio  decimal,
+	CONSTRAINT pk_comedor PRIMARY KEY(idestudio)
+	
+)engine=myisam;
+
+
+
+//procedimientos almacenados
+
+//procedimiento para clientes
+
+CREATE PROCEDURE abcclientes(in idcte int, in nomcte varchar(30),
+in apepat varchar(30), in apemat varchar(30), in dircte varchar(100), 
+in telcte char(10), in mailcte varchar(30), gencte char(1),
+edacte char(3), in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO clientes (nomcte,apepat,apemat,dircte,telcte,mailcte,gencte,edacte)
+		values (nomcte,apepat,apemat,dircte,telcte,mailcte,gencte,edacte);
+	ELSEIF opc = 2 THEN
+		UPDATE clientes SET nomcte=nomcte,apepat=apepat,apemat=apemat,dircte=dircte,telcte=telcte,mailcte=mailcte,gencte=gencte,edacte=edacte
+		WHERE idcte = idcte;
+	ELSEIF opc = 3 THEN
+		DELETE FROM clientes WHERE idcte = idcte;
+
+	END IF;
+END//
+ 
+
+//procedimiento para usuarios
+CREATE PROCEDURE abcusuarios(in idusr int, in nomusr varchar(30),
+in apepat varchar(30), in apemat varchar(30), in dirusr varchar(100), 
+in telusr char(10), in mailusr varchar(30), genusr char(1),
+edausr char(3), in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO usuarios (nomusr,apepat,apemat,dirusr,telusr,mailusr,genusr,edausr)
+		values (nomusr,apepat,apemat,dirusr,telusr,mailusr,genusr,edausr);
+	ELSEIF opc = 2 THEN
+		UPDATE usuarios SET nomusr=nomusr,apepat=apepat,apemat=apemat,dirusr=dirusr,telusr=telusr,mailusr=mailusr,genusr=genusr,edausr=edausr
+		WHERE idusr = idusr;
+	ELSEIF opc = 3 THEN
+		DELETE FROM usuarios WHERE idcte = idusr;
+
+	END IF;
+END// 
+
+
+//procedimiento para salas
+CREATE PROCEDURE abcsala(in idsala int, in marcSala varchar(30),
+in descriSala varchar(100), in precioSala decimal,  in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO sala (marcSala,descriSala,precioSala)
+		values (marcSala,descriSala,precioSala);
+	ELSEIF opc = 2 THEN
+		UPDATE sala SET marcSala=marcSala,descriSala=descriSala,precioSala=precioSala
+		WHERE idsala = idsala;
+	ELSEIF opc = 3 THEN
+		DELETE FROM sala WHERE idsala = idsala;
+
+	END IF;
+END// 
+
+
+//procedimiento para comedor
+CREATE PROCEDURE abccomedor(in idcomedor int, in marcComedor varchar(30),
+in descriComedor varchar(100), in precioComedor decimal,  in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO comedor (marcComedor,descriComedor,precioComedor)
+		values (marcComedor,descriComedor,precioComedor);
+	ELSEIF opc = 2 THEN
+		UPDATE comedor SET marcComedor=marcComedor,descriComedor=descriComedor,precioComedor=precioComedor
+		WHERE idcomedor = idcomedor;
+	ELSEIF opc = 3 THEN
+		DELETE FROM comedor WHERE idcomedor = idcomedor;
+
+	END IF;
+END// 
+
+
+
+
+//procedimiento para recamara
+CREATE PROCEDURE abcrecamara(in idrecamara int, in marcRecamara varchar(30),
+in descriRecamara varchar(100), in precioRecamara decimal,  in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO recamara (marcRecamara,descriRecamara,precioRecamara)
+		values (marcRecamara,descriRecamara,precioRecamara);
+	ELSEIF opc = 2 THEN
+		UPDATE recamara SET marcRecamara=marcRecamara,descriRecamara=descriRecamara,precioRecamara=precioRecamara
+		WHERE idrecamara = idrecamara;
+	ELSEIF opc = 3 THEN
+		DELETE FROM recamara WHERE idrecamara = idrecamara;
+
+	END IF;
+END// 
+
+
+//procedimiento para salaTV
+CREATE PROCEDURE abcsalaTV(in idstv int, in marcSTV varchar(30),
+in descriSTV varchar(100), in precioSTV decimal,  in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO salaTV (marcSTV,descriSTV,precioSTV)
+		values (marcSTV,descriSTV,precioSTV);
+	ELSEIF opc = 2 THEN
+		UPDATE salaTV SET marcSTV=marcSTV,descriSTV=descriSTV,precioSTV=precioSTV
+		WHERE idstv = idstv;
+	ELSEIF opc = 3 THEN
+		DELETE FROM salaTV WHERE idstv = idstv;
+
+	END IF;
+END//
+
+
+//procedimiento para estudio
+CREATE PROCEDURE abcestudio(in idestudio int, in marcEstudio varchar(30),
+in descriEstudio varchar(100), in precioEstudio decimal,  in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO estudio (marcEstudio,descriEstudio,precioEstudio)
+		values (marcEstudio,descriEstudio,precioEstudio);
+	ELSEIF opc = 2 THEN
+		UPDATE estudio SET marcEstudio=marcEstudio,descriEstudio=descriEstudio,precioEstudio=precioEstudio
+		WHERE idestudio = idestudio;
+	ELSEIF opc = 3 THEN
+		DELETE FROM estudio WHERE idestudio = idestudio;
+
+	END IF;
+END//
+
+
+
+
+
+	
+
+
+
+
+

@@ -1,0 +1,56 @@
+
+
+CREATE DATABASE pagweb;
+
+CREATE TABLE usuarios
+(
+	idusr int auto_increment,
+	urs varchar(15),
+	pwdusr char(32),
+	nomusr varchar (50),
+	CONSTRAINT pk_usr PRIMARY KEY(idusr) 
+) engine = myisam;
+
+mysql> create database pagweb;
+Query OK, 1 row affected (0.33 sec)
+
+mysql> use pagweb;
+Database changed
+
+
+create table clientes 
+(
+	idctee int auto_increment,
+	nomcte varchar(30),
+	apepat varchar(30),
+	apemat varchar(30),
+	dircte varchar (100),
+	telcte char(10),
+	mailcte varchar(30),
+	gencte char(1),
+	edacte char(3),
+	CONSTRAINT pk_cte PRIMARY KEY(idctee)
+
+
+)engine=myisam;
+
+
+//// para agregar un procedimiento almacenado
+
+DELIMITER //
+CREATE PROCEDURE abcclientes(in idctee int, in nomcte varchar(30),
+in apepat varchar(30), in apemat varchar(30), in dircte varchar(100), 
+in telcte char(10), in mailcte varchar(30), gencte char(1),
+edacte char(3), in opc int)
+BEGIN
+	IF opc = 1 THEN
+		INSERT INTO clientes (nomcte,apepat,apemat,dircte,telcte,mailcte,gencte,edacte)
+		values (nomcte,apepat,apemat,dircte,telcte,mailcte,gencte,edacte);
+	ELSEIF opc = 2 THEN
+		UPDATE clientes SET nomcte=nomcte,apepat=apepat,apemat=apemat,dircte=dircte,telcte=telcte,mailcte=mailcte,gencte=gencte,edacte=edacte
+		WHERE idctee = idctee;
+	ELSEIF opc = 3 THEN
+		DELETE FROM clientes WHERE idctee = idcte;
+
+	END IF;
+END// 

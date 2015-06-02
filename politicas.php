@@ -5,13 +5,21 @@
 ?>
 
     <div class="row">
-    <div class="col-md-2"></div>
+    <div class="col-md-2">
+      <img src="img/public.png" width="300" />
+      <img src="img/public1.png" width="300" />
+      <br>
+      <img src="img/public2.png" width="300" />
+
+
+      </div>
     <div class="col-md-8">
-    <h4><font color="#DF3A01">---------------- AVISO DE PRIVACIDAD ------------------</font></h4>
+    <h4><font color="#DF3A01">EL AVISO DE PRIVACIDAD FORMA PARTE DEL USO DE ESTE SITIO WEB </font></h4>
       <HR >
-      <h5><font color="#DF3A01">EL AVISO DE PRIVACIDAD FORMA PARTE DEL USO DE ESTE SITIO WEB </font></h5>
       <P style="text-align: justify;"><span style="color:#BDBDBD">
       RESPONSABLE <BR>
+
+      <span style="color:#424242">
 
         En cumplimiento a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, BAZAYA MEXICO, 
         S. de R.L. de C.V., (en adelante Muebles el carpintero) le informa que Muebles el carpintero es responsable de sus datos personales. 
@@ -23,15 +31,10 @@
         así como el tratamiento no autorizado de sus datos personales. 
           <br><br></P>
 
-    </div>
-    <div class="col-md-2"></div>
-    </div>
-
-    <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
       <P style="text-align: justify;"><span style="color:#BDBDBD">
       DATOS PERSONALES<BR>
+
+        <span style="color:#424242">
 
          La información deberá ser siempre veraz y completa. El usuario responderá en todo momento por los datos 
          proporcionados y en ningún caso Linio será responsable de la veracidad de los mismos.<br>
@@ -44,15 +47,10 @@
         físicas, para evitar su daño, pérdida, alteración, destrucción, uso, acceso o divulgación indebida. 
           <br><br></P>
 
-    </div>
-    <div class="col-md-2"></div>
-    </div>
-
-    <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
       <P style="text-align: justify;"><span style="color:#BDBDBD">
       TRANSFERENCIA DE DATOS<BR>
+
+        <span style="color:#424242">
 
          El titular de los datos personales, autoriza a Bazaya México, S. de R.L. de C.V., a transferir los datos 
          proporcionados por él a terceros (ya sea persona física o moral), que con motivo de la relación comercial 
@@ -65,15 +63,11 @@
         transcurrido dicho término, acepta y autoriza a Bazaya México, S. de R.L. de C.V. a la transferencia de los mismos.
           <br><br></P>
 
-    </div>
-    <div class="col-md-2"></div>
-    </div>
-
-    <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
       <P style="text-align: justify;"><span style="color:#BDBDBD">
       QUÉ SON LOS COOKIES Y CÓMO SE UTILIZAN<BR>
+
+
+        <span style="color:#424242">
 
          La aceptación de las cookies no es un requisito para visitar nuestra página. Sin embargo, nos gustaría señalar 
          que el uso del "carrito", funcionalidad en linio y orden solo es posible con la activación de las cookies. 
@@ -92,15 +86,10 @@
          cómo hacer que el navegador le notifique cuando recibe un nuevo cookie o cómo deshabilitar todos los cookies. 
           <br><br></P>
 
-    </div>
-    <div class="col-md-2"></div>
-    </div>
-
-    <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
       <P style="text-align: justify;"><span style="color:#BDBDBD">
       USO DE LA INFORMACIÓN<BR>
+
+        <span style="color:#424242">
 
          La información solicitada permite a muebles el carpintero contactar a los usuarios y potenciales clientes cuando sea necesario 
          para completar los procedimientos de compra. Asimismo, muebles el carpintero utilizará la información obtenida para: 
@@ -113,16 +102,11 @@
          El usuario puede modificar su perfil en cualquier momento utilizando su número de usuario y contraseña. 
           <br><br></P>
 
-    </div>
-    <div class="col-md-2"></div>
-    </div>
-
-    <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
       <P style="text-align: justify;"><span style="color:#BDBDBD">
       LIMITACIÓN DE USO Y DIVULGACIÓN DE INFORMACIÓN<BR>
 
+        <span style="color:#424242">
+        
         En nuestro programa de notificación de promociones, ofertas y servicios a través de correo electrónico, 
         solo Linio tiene acceso a la información recabada. Este tipo de publicidad se realiza mediante avisos y 
         mensajes promocionales de correo electrónico, los cuales solo serán enviados a usted y a aquellos contactos 
