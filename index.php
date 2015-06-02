@@ -1,8 +1,10 @@
 <?php session_start(); 
 	include 'conexion.php';
 	
-	if(isset($_POST['usuario'])){
+	if(isset($_POST['usuario'])){ //Login de usuario
 		login($_POST['usuario'],$_POST['pass']);
+	}else if(isset($_POST['NombreVendedor'])){ //Registro de vendedor
+		
 	}else if(isset($_GET['salir'])){
 		echo "<script type='text/javascript'>alert('Adios');</script>";
 		session_unset();
