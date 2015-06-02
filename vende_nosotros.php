@@ -1,3 +1,12 @@
+<?php session_start(); 
+  include 'conexion.php';
+  
+  if(isset($_POST['usuario'])){
+    login($_POST['usuario'],$_POST['pass']);
+  }else if(isset($_GET['salir'])){
+    session_destroy();
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

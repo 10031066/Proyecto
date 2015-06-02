@@ -174,41 +174,11 @@
 		<div class="row">
       <div class="col-md-12">
           
-        <div id="header">
-      <ul class="nav">
-        <li><a href="">Sala</a>
-          <ul>
-            <li><a href="">Sofa</a></li>
-            <li><a href="">Sillones</a></li>
-            <li><a href="">Sala de TV</a></li>
-          </ul>
-        </li>
-
-        <li><a href="">Comedor</a>
-          <ul>
-            <li><a href="">Madera</a></li>
-            <li><a href="">Metal</a></li>
-            <li><a href="">Jardin</a></li>
-          </ul>
-        </li>
-
-        <li><a href="">Recamara</a>
-          <ul>
-            <li><a href="">Individual</a></li>
-            <li><a href="">Matrimanial</a></li>
-            <li><a href="">Literas/a></li>
-          </ul>
-        </li>
-
-        <li><a href="">Estudio y oficina</a>
-          <ul>
-            <li><a href="">Escritorios</a></li>
-            <li><a href="">Libreros</a></li>
-            <li><a href="">Mesas ajustables</a></li>
-            <li><a href="">Sillas ejecutivas</a></li>
-          </ul>
-        </li>
-
+        <ul class="nav nav-pills">
+        <li role="presentation" ><a href="#">Sala<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="#">Comedor<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="#">Recamara<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="#">Estudio y oficina<span class="divider">|</span></a></li>
       </ul>
     </div>
     </div>
@@ -217,18 +187,11 @@
 		<div class="col-md-12">
 	    		<font color="white">separacion</font><br>
           <font color="white">separacion</font>
-          <font color="white">separacion</font>
-          <font color="white">separacion</font>
-          <font color="white">separacion</font>
 		</div>
 					
 	</div>
   <div class="row">
     <div class="col-md-12">
-          <font color="white">separacion</font>
-          <font color="white">separacion</font>
-          <font color="white">separacion</font>
-          <font color="white">separacion</font>
           <font color="white">separacion</font>
     </div>
           
@@ -293,7 +256,8 @@
 
 	<div class="row">
 		<div class="col-md-12">
-			<h3>---------------- LAS MEJORES OFERTAS ------------------</h3>
+    <h4><font color="silver">---------------- LAS MEJORES OFERTAS ------------------</font></h4>
+      <HR >
 		</div>
 
 		<div class="col-md-4">
@@ -329,7 +293,8 @@
 
 	<div class="row">
 		<div class="col-md-12">
-			<h3>---------------- TIENDAS OFICIALES------------------</h3>
+    <h4><font color="silver">---------------- TIENDAS OFICIALES ------------------</font></h4>
+      <HR >
 		<ul class="breadcrumb">
           <li><img src="img/tiendas/coppel.jpg" id="img1" width="150" height="100"></a><span class="divider"></span></li>
           <li><img src="img/tiendas/famsa.jpg" id="img1" width="90" height="90"></a> <span class="divider"></span></li>
@@ -353,7 +318,8 @@
 
 	<div class="row">
             <div class="col-md-12">
-            <h3>---------------- MARCAS OFICIALES ------------------</h3>
+            <h4><font color="silver">---------------- MARCAS OFICIALES ------------------</font></h4>
+      <HR >
 
                <nav class="navbar navbar-default" role="navigation">
 
