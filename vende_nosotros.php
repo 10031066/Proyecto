@@ -37,6 +37,12 @@
 
       <div class="col-md-8">
 		<form action="registrar.php" method="POST">
+
+        <div class="col-md-12">
+            <h4><font color="#DF3A01">---------------- Datos del usuario ------------------</font></h4>
+             <HR >
+          </div>
+
           <div class="col-md-12">
           <label for="Nombre" class="col-lg-6 control-label">Nombre: </label>
            <div class="col-lg-6">
@@ -87,17 +93,44 @@
           </div>
 
           <div class="col-md-12">
-          <label for="edad" class="col-lg-6 control-label">Edad: </label>
-          <div class="col-lg-6">
-          <input type="text" class="form-control" name="edad">
-          </div>
-          </div>
-
-          <div class="col-md-12">
           <label for="radio" class="col-lg-6 control-label">sexo: </label>
           <input type="radio" name="genero" value="Male">Male<BR>
             <input type="radio"name="genero" value="Female">Female
           </div>
+
+          <div class="col-md-12">
+            <h4><font color="#DF3A01">---------------- Datos de la empresa ------------------</font></h4>
+             <HR >
+          </div>
+
+          <div class="col-md-12">
+          <label class="col-lg-6 control-label">Nombre de la empresa: </label>
+          <div class="col-lg-6">
+          <input type="text" class="form-control" name="empresa">
+          </div>
+          </div>
+
+          <div class="col-md-12">
+          <label class="col-lg-6 control-label">Direccion de la empresa: </label>
+          <div class="col-lg-6">
+          <input type="text" class="form-control" name="dirempresa">
+          </div>
+          </div>
+
+          <div class="col-md-12">
+          <label class="col-lg-6 control-label">Telefono de la empresa: </label>
+          <div class="col-lg-6">
+          <input type="text" class="form-control" name="telempresa">
+          </div>
+          </div>
+
+          <div class="col-md-12">
+          <label class="col-lg-6 control-label">Email de la empresa: </label>
+          <div class="col-lg-6">
+          <input type="text" class="form-control" name="emailempresa">
+          </div>
+          </div>
+
 
           <div class="col-md-12">
             <div class="col-md-5">
