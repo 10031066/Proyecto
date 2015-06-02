@@ -1,0 +1,45 @@
+CREATE TABLE Empleado
+(
+	idEmp int auto_incremente,
+	nomEmp varchar(30),
+	apePat varchar(30),
+	apeMat varchar(30),
+	dirEmp varchar(30),
+	telEmp char(10),
+	email1 varchar(30),
+	email2 varchar(30),
+	genEmp char(1),
+	Empresa varchar(30),
+	dirEmpresa varchar(40),
+ 	TelEmpresa char(10),
+	emailEmpresa varchar(30),
+	password varchar(35),
+	CONSTRAINT pk_empleado PRIMARY KEY(idEmp)
+
+)
+
+
+
+CREATE PROCEDIRE abcEmpleado (in idEmp int, in nomEmp varchar(30),
+in apePat varchar(30), in apeMat varchar(30), in dirEmp varchar(30),
+in  telEmp char(10), in email1 varchar(30), in email1 varchar(30),
+in genEmp char(1), in Empresa varchar(30), in dirEmpresa varchar(40),
+in dirEmpresa varchar(40), in TelEmpresa char(10), in emailEmpresa varchar(30,
+in password varchar(30),
+
+BEGIN
+ 
+	IF POC = 1 THEN
+		INSER INTO Empleado (nomEmp, apePat, apeMat, dirEmp, telEmp, email1, email2, genEmp, Empresa, dirEmpresa, TelEmpresa, emailEmpresa, password)
+		values (nomEmp, apePat, apeMat, dirEmp, telEmp, email1, email2, genEmp, Empresa, dirEmpresa, TelEmpresa, emailEmpresa, password);
+	ELSEIF opc = 2 THEN
+		UPDATE Empleado SET nomEmp=nomEmp,apePat=apePat,apeMat=apeMat,dirEmp=dirEmp,telEmp=telEmp,email1=email1,email2=email2,genEmp=genEmp,Empresa=Empresa,dirEmpresa=dirEmpresa,TelEmpresa=TelEmpresa,emailEmpresa=emailEmpresa,password=password
+	ELSEIF opc = 3 THEN
+		DELETE FROM Empleado WHERE idEmp = idEmp;
+
+	END IF;
+
+end//
+
+
+

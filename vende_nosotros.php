@@ -49,7 +49,14 @@
           <input type="text" class="form-control" name="NombreVendedor">
           </div>
           </div>
-
+		  
+			<div class="col-md-12">
+          <label for="ApePaterno" class="col-lg-6 control-label">Ape. Paterno: </label>
+          <div class="col-lg-6">
+          <input type="tex" class="form-control" name="ApePaterno">
+          </div>
+          </div>
+		  
           <div class="col-md-12">
           <label for="ApeMaterno" class="col-lg-6 control-label">Ape. Materno: </label>
           <div class="col-lg-6">
@@ -57,12 +64,7 @@
           </div>
           </div>
 
-          <div class="col-md-12">
-          <label for="ApePaterno" class="col-lg-6 control-label">Ape. Paterno: </label>
-          <div class="col-lg-6">
-          <input type="tex" class="form-control" name="ApePaterno">
-          </div>
-          </div>
+          
 
           <div class="col-md-12">
           <label for="Dir" class="col-lg-6 control-label">Direccion: </label>

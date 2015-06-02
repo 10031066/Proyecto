@@ -1,0 +1,29 @@
+CREATE TABLE Empresa
+(
+	id int auto_increment,
+	Nom varchar(30),
+	dir varchar(40),
+ 	Tel char(10),
+	email varchar(30),
+	pass varchar(35),
+	CONSTRAINT pk_empleado PRIMARY KEY(id)
+)
+
+
+
+CREATE PROCEDURE abcEmpresa (in id int, in Nombre varchar(30),
+in dir varchar(40), in Tel char(10), in email varchar(30),
+in pass varchar(30),in opc int)
+
+BEGIN
+ 
+	IF opc = 1 THEN
+		INSER INTO empresa (nom,dir,tel, email, pass) values (Nombre,dir,Tel,email,pass);
+	ELSEIF opc = 2 THEN
+		UPDATE Empleado SET nomEmp
+	ELSEIF opc = 3 THEN
+		DELETE FROM Empleado WHERE idEmp = idEmp;
+
+	END IF;
+
+end//
