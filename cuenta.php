@@ -18,7 +18,26 @@
     <h4><font >Informacion de contacto</font></h4>
           <p align="justify">karla erika torres rodriguez<br>
             karlita_erika_07_14@hotmail.com <input class="btn btn-primary" type="submit" value="Cambiar correo" >
-            <input class="btn btn-primary" type="submit" value="Cambiar contraseña" >
+
+            <div class="panel panel-default">
+              <div class="panel-body">
+
+                <label for="CorreoNue" class="col-lg-6 control-label">Correo Nuevo: </label>
+                   <div class="col-lg-6">
+                  <input type="email" class="form-control" name="CorreoNue">
+                  </div>
+
+                <label for="ConfCoreNue" class="col-lg-6 control-label">Confirmar correo: </label>
+                   <div class="col-lg-6">
+                  <input type="email" class="form-control" name="ConfCoreNue">
+                  </div>
+
+                <input class="btn btn-primary" type="submit" value="Guardar" >
+
+              </div>
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Cambiar contraseña" ><br><HR>
             <input class="btn btn-primary" type="submit" value="Editar informacion" >
           </P>
 
