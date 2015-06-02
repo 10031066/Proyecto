@@ -176,53 +176,36 @@
           
         <div id="header">
       <ul class="nav">
-        <li><a href="">Servicios</a>
+        <li><a href="">Sala</a>
           <ul>
-            <li><a href="">Submenu1</a></li>
-            <li><a href="">Submenu2</a></li>
-            <li><a href="">Submenu3</a></li>
-            <li><a href="">Submenu4</a>
-              <ul>
-                <li><a href="">Submenu1</a></li>
-                <li><a href="">Submenu2</a></li>
-                <li><a href="">Submenu3</a></li>
-                <li><a href="">Submenu4</a></li>
-              </ul>
-            </li>
+            <li><a href="">Sofa</a></li>
+            <li><a href="">Sillones</a></li>
+            <li><a href="">Sala de TV</a></li>
           </ul>
         </li>
 
-        <li><a href="">Servicios</a>
+        <li><a href="">Comedor</a>
           <ul>
-            <li><a href="">Submenu1</a></li>
-            <li><a href="">Submenu2</a></li>
-            <li><a href="">Submenu3</a></li>
-            <li><a href="">Submenu4</a>
-              <ul>
-                <li><a href="">Submenu1</a></li>
-                <li><a href="">Submenu2</a></li>
-                <li><a href="">Submenu3</a></li>
-                <li><a href="">Submenu4</a></li>
-              </ul>
-            </li>
+            <li><a href="">Madera</a></li>
+            <li><a href="">Metal</a></li>
+            <li><a href="">Jardin</a></li>
           </ul>
         </li>
 
-        <li><a href="">Acerca de</a>
+        <li><a href="">Recamara</a>
           <ul>
-            <li><a href="">Submenu1</a></li>
-            <li><a href="">Submenu2</a></li>
-            <li><a href="">Submenu3</a></li>
-            <li><a href="">Submenu4</a></li>
+            <li><a href="">Individual</a></li>
+            <li><a href="">Matrimanial</a></li>
+            <li><a href="">Literas/a></li>
           </ul>
         </li>
 
-        <li><a href="">Acerca de</a>
+        <li><a href="">Estudio y oficina</a>
           <ul>
-            <li><a href="">Submenu1</a></li>
-            <li><a href="">Submenu2</a></li>
-            <li><a href="">Submenu3</a></li>
-            <li><a href="">Submenu4</a></li>
+            <li><a href="">Escritorios</a></li>
+            <li><a href="">Libreros</a></li>
+            <li><a href="">Mesas ajustables</a></li>
+            <li><a href="">Sillas ejecutivas</a></li>
           </ul>
         </li>
 
@@ -232,10 +215,24 @@
 
 	<div class="row">
 		<div class="col-md-12">
-	    		<font color="white">separacion</font>
+	    		<font color="white">separacion</font><br>
+          <font color="white">separacion</font>
+          <font color="white">separacion</font>
+          <font color="white">separacion</font>
+          <font color="white">separacion</font>
 		</div>
 					
 	</div>
+  <div class="row">
+    <div class="col-md-12">
+          <font color="white">separacion</font>
+          <font color="white">separacion</font>
+          <font color="white">separacion</font>
+          <font color="white">separacion</font>
+          <font color="white">separacion</font>
+    </div>
+          
+  </div>
 
 		<div class="row">
 			<div class="col-md-8">
