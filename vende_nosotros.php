@@ -168,42 +168,13 @@ document.getElementById('registro').style.display = 'block';}
 		<div class="row">
       <div class="col-md-12">
           
-        <div id="header">
-      <ul class="nav">
-        <li><a href="">Sala</a>
-          <ul>
-            <li><a href="">Sofa</a></li>
-            <li><a href="">Sillones</a></li>
-            <li><a href="">Sala de TV</a></li>
-          </ul>
-        </li>
-
-        <li><a href="">Comedor</a>
-          <ul>
-            <li><a href="">Madera</a></li>
-            <li><a href="">Metal</a></li>
-            <li><a href="">Jardin</a></li>
-          </ul>
-        </li>
-
-        <li><a href="">Recamara</a>
-          <ul>
-            <li><a href="">Individual</a></li>
-            <li><a href="">Matrimanial</a></li>
-            <li><a href="">Literas/a></li>
-          </ul>
-        </li>
-
-        <li><a href="">Estudio y oficina</a>
-          <ul>
-            <li><a href="">Escritorios</a></li>
-            <li><a href="">Libreros</a></li>
-            <li><a href="">Mesas ajustables</a></li>
-            <li><a href="">Sillas ejecutivas</a></li>
-          </ul>
-        </li>
-
+        <ul class="nav nav-pills">
+        <li role="presentation" ><a href="#">Sala<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="#">Comedor<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="#">Recamara<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="#">Estudio y oficina<span class="divider">|</span></a></li>
       </ul>
+    </div>
     </div>
 
 
