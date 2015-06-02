@@ -452,9 +452,9 @@
 		<div class="col-md-3">
     		<P ALIGN=center>
     		<FONT FACE="times new roman"><span style="color:#088A08">ACERCA DE NOSOTROS<BR></font>
-    		<span style="color:#BDBDBD">Quienes somos?<BR>
-    		<span style="color:#BDBDBD">Trabaja con nosotros<BR>
-    		<span style="color:#BDBDBD">Login<BR>
+    		<a href="mision.php"><span style="color:#BDBDBD">Quienes somos?<BR></a>
+    		<a href="vende_nosotros.php"><span style="color:#BDBDBD">Trabaja con nosotros<BR></a>
+    		<a href=".php"><span style="color:#BDBDBD">Login<BR></a>
     		</P>
     			
 		</div>
@@ -462,18 +462,15 @@
 		<div class="col-md-3">
     		<P ALIGN=center>
     		<FONT FACE="times new roman"><span style="color:#088A08">SERVICIO A CLIENTES<BR></font>
-    		<span style="color:#BDBDBD">Contactanos<BR>
-    		<span style="color:#BDBDBD">Politicas de Privacidad<BR>
-    		<span style="color:#BDBDBD">Cancelaciones<BR>
-    		<span style="color:#BDBDBD">Politicas de Envios, Cancelaciones, Devoluciones<BR>
+    		<a href="politicas.php"><span style="color:#BDBDBD">Politicas de Privacidad<BR></a>
+    		<a href="mision.php"><span style="color:#BDBDBD">Cancelaciones<BR></a>
+    		<a href="mision.php"><span style="color:#BDBDBD">Politicas de Envios, Cancelaciones, Devoluciones<BR></a>
     		</P>
     			
 		</div>
 
 		<div class="col-md-3">
 		</div>
-
-
 	</div>
 		
     
