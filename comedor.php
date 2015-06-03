@@ -6,7 +6,7 @@
 	<div class="col-md-2">
 		<ul class="breadcrumb">
           <li><a href="index.php">Home</a><span class="divider">|</span></li>
-          <li><a href="salas.php">Salas</a> <span class="divider">|</span></li>
+          <li><a href="comedor.php">Comedor</a> <span class="divider">|</span></li>
         </ul>
 	</div>
 </div>

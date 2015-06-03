@@ -6,7 +6,7 @@
 	<div class="col-md-2">
 		<ul class="breadcrumb">
           <li><a href="index.php">Home</a><span class="divider">|</span></li>
-          <li><a href="salas.php">Salas</a> <span class="divider">|</span></li>
+          <li><a href="Recamaras.php">Recamaras</a> <span class="divider">|</span></li>
         </ul>
 	</div>
 </div>
@@ -23,7 +23,7 @@
               	</div>
 
               	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Comedor 1</font></h4>
+                   <h4><font color="#DF3A01">Recamara 1</font></h4>
       				<HR >
 
       				<P style="text-align: center;">
@@ -54,7 +54,7 @@
               	</div>
 
               	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Comedor 2</font></h4>
+                   <h4><font color="#DF3A01">Recamara 2</font></h4>
       				<HR >
 
       				<P style="text-align: center;">
@@ -85,7 +85,7 @@
               	</div>
 
               	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Comedor 3</font></h4>
+                   <h4><font color="#DF3A01">Recamara 3</font></h4>
       				<HR >
 
       				<P style="text-align: center;">
