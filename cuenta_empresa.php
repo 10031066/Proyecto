@@ -1,5 +1,16 @@
-<?php
- include 'top.php'
+<?php session_start();
+	include 'top.php';
+	include 'conexion.php';
+ 
+  if(isset($_SESSION['user'])){
+	 $query = "Select * from empresa where id='".$_SESSION['user']."'";
+	 echo $query;
+	 $resultado = ejecutaQuery($query);
+	 $fila = $resultado->fetch_array(MYSQLI_ASSOC);
+}else{
+	echo "<script type='text/javascript'>alert('No Deberias estar aqui!!');</script>";
+}
+
 ?>
 
 <div class="row">
@@ -25,7 +36,7 @@
   <div class="col-md-8">
     <h4><font color="#DF3A01">Mi cuenta</font></h4>
           <span style="color:#424242">
-          <p align="justify">Hola cerro fresh<br>
+          <p align="justify">Hola <?php echo $fila['nom'];?><br>
             Desde la seccion Mi Cuenta, puedes consultar toda la actividad reciente de tus pedidos y actualizar 
             tu información personal.
           </P>
@@ -33,41 +44,12 @@
          <h4><font color="#DF3A01">Informacion de contacto</font></h4>
           <span style="color:#424242">
           <p align="justify"> 
-		    Nombre: <br>
-		    Direccion: <br> 
-		    Teléfono: <br>
-		    Email: <br>
-            <br><input class="btn btn-primary btn-xs" type="submit" value="Cambiar contraseña" value="Mostrar" onclick="mostrar()"><br> <br> 
+		    Nombre: <?php echo $fila['nom'];?><br>
+		    Direccion: <?php echo $fila['dir'];?><br> 
+		    Teléfono: <?php echo $fila['tel'];?><br>
+		    Email: <?php echo $fila['email'];?><br>
             
-            <HR>
-            <div class="panel panel-default" id='oculto' style='display:none;'>
-              <div class="panel-body">
-
-                <div class="col-md-12">
-                   <label for="email1" class="col-lg-6 control-label">Contraseña actual: </label>
-                   <div class="col-lg-6">
-                   <input type="email" class="form-control" name="email1">
-                </div>
-              </div>
-
-                <div class="col-md-12">
-                   <label for="email1" class="col-lg-6 control-label">Nueva contraseña: </label>
-                   <div class="col-lg-6">
-                   <input type="email" class="form-control" name="email1">
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                  <label for="email2" class="col-lg-6 control-label">Confirmar contraseña: </label>
-                <div class="col-lg-6">
-                  <input type="email" class="form-control" name="email2">
-                </div>
-              </div>
-              
-              <input class="btn btn-primary btn-xs" type="submit" value="Guardar" value="Ocultar" onclick="ocultar()">
-
-              </div>
-            </div>
+			<?php include '/extras/FormNuevaPass.php'; ?>
 
 
 			<div class="col-md-2">

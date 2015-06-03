@@ -95,6 +95,23 @@
 		
 	}
 	
+	function actualizaPass($antigua,$email1,$email2,$tabla){
+		$query = "Select * from ".$tabla." where id='".$_SESSION['user']."'";
+		$resultado = ejecutaQuery($query);
+		$fila = $resultado->fetch_array(MYSQLI_ASSOC);		 
+		if($fila['pass']==md5($REQUEST['antigua'])){
+			if($_REQUEST['email1']==$_REQUEST['email2']){
+				$query = "UPDATE ".$tabla." SET pass='".md5($_REQUEST['email1'])."' where id='".$_SESSION['user']."'";
+				ejecutaQuery($query);
+				echo "La contraseña se ha actualizado";
+			}else{
+				echo "Ambas contraseñas nuevas no son iguales";
+			}
+		 }else{
+			 echo "La contraseña anterior no es correcta";
+		 }
+	}
+	
 	function gererarPass(){
 		$characters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		$randstring = '';

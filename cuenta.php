@@ -4,10 +4,17 @@
  
  if(isset($_SESSION['user'])){
 	 $query = "Select * from clientes where id='".$_SESSION['user']."'";
-	 echo $query;
+	 //echo $query;
 	 $resultado = ejecutaQuery($query);
 	 $fila = $resultado->fetch_array(MYSQLI_ASSOC);
- }
+	 
+	 if(isset($_REQUEST['antigua'])){
+		 actualizaPass($_REQUEST['antigua'],$_REQUEST['email1'],$_REQUEST['email2'],"clientes");
+	 }
+}else{
+	echo "<script type='text/javascript'>alert('No Deberias estar aqui!!');</script>";
+}
+	
 ?>
 
 <div class="row">
@@ -43,36 +50,7 @@
           <p align="justify"><?php echo $fila['nomcte']; ?><br>
             <?php echo $fila['mailcte']; ?>
 			
-            <br><input class="btn btn-primary btn-xs" type="submit" value="Cambiar contraseña" value="Mostrar" onclick="mostrar()"><br> <br>            
-            <HR>
-            <div class="panel panel-default" id='oculto' style='display:none;'>
-              <div class="panel-body">
-
-                <div class="col-md-12">
-                   <label for="email1" class="col-lg-6 control-label">Contraseña actual: </label>
-                   <div class="col-lg-6">
-                   <input type="email" class="form-control" name="email1">
-                </div>
-              </div>
-
-                <div class="col-md-12">
-                   <label for="email1" class="col-lg-6 control-label">Nueva contraseña: </label>
-                   <div class="col-lg-6">
-                   <input type="email" class="form-control" name="email1">
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                  <label for="email2" class="col-lg-6 control-label">Confirmar contraseña: </label>
-                <div class="col-lg-6">
-                  <input type="email" class="form-control" name="email2">
-                </div>
-              </div>
-              
-              <input class="btn btn-primary btn-xs" type="submit" value="Guardar" value="Ocultar" onclick="ocultar()">
-			</form>
-              </div>
-            </div>
+            <?php include '/extras/FormNuevaPass.php'; ?>
 
             <HR>
           </P>
