@@ -5,6 +5,16 @@
 ?>
 
 <div class="row">
+  <div class="col-md-3">
+    <ul class="breadcrumb">
+          <li><a href="index.php">Home</a><span class="divider">|</span></li>
+          <li><a href="mision.php">Quienes somos</a> <span class="divider">|</span></li>
+        </ul>
+  </div>
+</div>
+
+
+<div class="row">
   <div class="col-md-12"> 
 
   </div>

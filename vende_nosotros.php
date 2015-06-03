@@ -4,6 +4,16 @@
 	include 'top.php';
 ?>
 
+<div class="row">
+  <div class="col-md-3">
+    <ul class="breadcrumb">
+          <li><a href="index.php">Home</a><span class="divider">|</span></li>
+          <li><a href="vende_nosotros.php">Registro de empresas</a> <span class="divider">|</span></li>
+        </ul>
+  </div>
+</div>
+
+
 	<div class="row">
 		<div class="col-md-12">
        <img src="img/vende_nts.png" width="1200" />

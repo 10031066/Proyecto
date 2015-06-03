@@ -11,6 +11,16 @@ include 'conexion.php';
 ?>
 
 <div class="row">
+  <div class="col-md-2">
+    <ul class="breadcrumb">
+          <li><a href="index.php">Home</a><span class="divider">|</span></li>
+          <li><a href="carrito.php">Carrito</a> <span class="divider">|</span></li>
+        </ul>
+  </div>
+</div>
+
+
+<div class="row">
 	<div class="col-md-4">
           <h4><font >Tu producto</font></h4>
           <HR >

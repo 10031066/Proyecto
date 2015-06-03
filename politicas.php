@@ -4,6 +4,16 @@
   include 'top.php';
 ?>
 
+<div class="row">
+  <div class="col-md-2">
+    <ul class="breadcrumb">
+          <li><a href="index.php">Home</a><span class="divider">|</span></li>
+          <li><a href="politicas.php">Politicas</a> <span class="divider">|</span></li>
+        </ul>
+  </div>
+</div>
+
+
     <div class="row">
     <div class="col-md-2">
       <img src="img/public.png" width="300" />

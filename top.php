@@ -205,10 +205,10 @@ document.getElementById('oculto').style.display = 'none';}
       <div class="col-md-12">
           
         <ul class="nav nav-pills">
-        <li role="presentation" ><a href="#">Sala<span class="divider">|</span></a></li>
-        <li role="presentation"><a href="#">Comedor<span class="divider">|</span></a></li>
-        <li role="presentation"><a href="#">Recamara<span class="divider">|</span></a></li>
-        <li role="presentation"><a href="#">Estudio y oficina<span class="divider">|</span></a></li>
+        <li role="presentation" ><a href="salas.php">Sala<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="comedor.php">Comedor<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="recamaras.php">Recamara<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="estudio.php">Estudio y oficina<span class="divider">|</span></a></li>
       </ul>
     </div>
     </div>

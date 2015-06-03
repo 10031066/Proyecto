@@ -2,7 +2,15 @@
  include 'top.php'
 ?>
 		
-		
+		<div class="row">
+  <div class="col-md-3">
+    <ul class="breadcrumb">
+          <li><a href="index.php">Home</a><span class="divider">|</span></li>
+          <li><a href="pagos.php">Dudas pagos</a> <span class="divider">|</span></li>
+        </ul>
+  </div>
+</div>
+
 
 	<div class="row">
 		<div class="col-md-2">
