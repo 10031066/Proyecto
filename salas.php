@@ -18,7 +18,7 @@
               <div class="panel-body">
 
                 <div class="col-md-12">
-                   <img src="img/sala1.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+                   <a href="Producto.php"><img src="img/sala1.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
                    onmouseout="javascript:this.width=250;this.height=250"/>
               	</div>
 
@@ -49,7 +49,7 @@
               <div class="panel-body">
 
                 <div class="col-md-12">
-                   <img src="img/sala2.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+                   <a href="Producto.php"><img src="img/sala2.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
                    onmouseout="javascript:this.width=250;this.height=250"/>
               	</div>
 
@@ -80,7 +80,7 @@
               <div class="panel-body">
 
                 <div class="col-md-12">
-                   <img src="img/sala3.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+                   <a href="Producto.php"><img src="img/sala3.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
                    onmouseout="javascript:this.width=250;this.height=250"/>
               	</div>
 

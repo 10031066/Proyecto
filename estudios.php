@@ -3,7 +3,7 @@
 ?>
 
 <div class="row">
-	<div class="col-md-2">
+	<div class="col-md-3">
 		<ul class="breadcrumb">
           <li><a href="index.php">Home</a><span class="divider">|</span></li>
           <li><a href="estudios.php">Estudio y oficina</a> <span class="divider">|</span></li>
@@ -18,7 +18,7 @@
               <div class="panel-body">
 
                 <div class="col-md-12">
-                   <img src="img/sala1.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+                   <a href="Producto.php"><img src="img/sala1.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
                    onmouseout="javascript:this.width=250;this.height=250"/>
               	</div>
 
@@ -32,7 +32,7 @@
 			           $ 1,973.83 
 			         </P>
 
-			         <input class="btn btn-primary" type="submit" value="Agregar al carrito" >
+			         <input class="btn btn-primary" type="submit" value="Comprar Ahora" >
 
               	</div>
 
@@ -49,7 +49,7 @@
               <div class="panel-body">
 
                 <div class="col-md-12">
-                   <img src="img/sala2.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+                   <a href="Producto.php"><img src="img/sala2.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
                    onmouseout="javascript:this.width=250;this.height=250"/>
               	</div>
 
@@ -63,7 +63,7 @@
 			           $ 1,973.83 
 			         </P>
 
-			         <input class="btn btn-primary" type="submit" value="Agregar al carrito" >
+			         <input class="btn btn-primary" type="submit" value="Comprar Ahora" >
 
               	</div>
 
@@ -80,7 +80,7 @@
               <div class="panel-body">
 
                 <div class="col-md-12">
-                   <img src="img/sala3.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+                   <a href="Producto.php"><img src="img/sala3.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
                    onmouseout="javascript:this.width=250;this.height=250"/>
               	</div>
 
@@ -94,7 +94,7 @@
 			           $ 1,699.83 
 			         </P>
 
-			         <input class="btn btn-primary" type="submit" value="Agregar al carrito" >
+			         <input class="btn btn-primary" type="submit" value="Compra ahora" >
 
               	</div>
 
