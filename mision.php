@@ -4,12 +4,19 @@
   include 'top.php';
 ?>
 
+<div class="row">
+  <div class="col-md-12"> 
+
+  </div>
+</div>
     <div class="row">
     <div class="col-md-2">
       <img src="img/public.png" width="300" />
       <img src="img/public1.png" width="300" />
       <br>
       <img src="img/public2.png" width="300" />
+      <br>
+      <img src="img/piblic3.jpg" width="300" />
 
 
       </div>
@@ -17,19 +24,23 @@
     <h4><font color="#DF3A01">---------------- Mision ------------------</font></h4>
       <HR >
       <P style="text-align: justify;">
-          <span style="color:#BDBDBD">Ofrecer a nuestros clientes una amplia gama de muebles para el hogar, con características que cuidan tanto los aspectos estéticos como funcionales a precios competitivos, en un entorno de excelencia operativa. Procurando siempre que nuestras actividades permitan el desarrollo y la satisfacción del capital humano.</P>
+          <span style="color:#424242">Ofrecer a nuestros clientes una amplia gama de muebles para el hogar, 
+          con características que cuidan tanto los aspectos estéticos como funcionales a precios competitivos, 
+          en un entorno de excelencia operativa. Procurando siempre que nuestras actividades permitan el desarrollo y 
+          la satisfacción del capital humano.</P>
 
-    <div class="col-md-12">
     <h4><font color="#DF3A01">---------------- Vision ------------------</font></h4>
       <HR >
       <P style="text-align: justify;">
-          <span style="color:#BDBDBD">Estar presentes en cada hogar satisfaciendo las necesidades de comodidad, calidad y elegancia, ser reconocidos en la industria del mueble nacional teniendo como base la honestidad esto nos dará un diferencial único que nos identifique y a la vez nos haga más competitivos, alcanzando y manteniendo un liderazgo en el mercado.</P>
+          <span style="color:#424242">>Estar presentes en cada hogar satisfaciendo las necesidades de comodidad, 
+          calidad y elegancia, ser reconocidos en la industria del mueble nacional teniendo como base la honestidad 
+          esto nos dará un diferencial único que nos identifique y a la vez nos haga más competitivos, alcanzando y 
+          manteniendo un liderazgo en el mercado.</P>
 
-    <div class="col-md-12">
     <h4><font color="#DF3A01">---------------- Valores ------------------</font></h4>
       <HR >
       <P style="text-align: justify;">
-          <span style="color:#BDBDBD">Conducción Clara<br>
+          <span style="color:#424242">Conducción Clara<br>
 Actuamos en concordancia plena con lo que establecimos.<br><br>
 
 Compromiso y Responsabilidad<br>
@@ -69,7 +80,7 @@ La empresa es reconocida por la responsabilidad en el cumplimiento de los compro
     </div>
 
 
-    
+</div>
 
 <?php
   include 'bottom.html';
