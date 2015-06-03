@@ -32,7 +32,7 @@
 			           $ 1,973.83 
 			         </P>
 
-			         <input class="btn btn-primary" type="submit" value="Agregar al carrito" >
+			         <br><input class="btn btn-primary" type="submit" value="Comprar ahora" >
 
               	</div>
 

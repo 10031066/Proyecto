@@ -8,9 +8,6 @@
       <img src="img/public1.png" width="300" />
       <br>
       <img src="img/public2.png" width="300" />
-      <br>
-      <img src="img/public.png" width="300" />
-
 
       </div>
 
