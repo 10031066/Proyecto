@@ -23,7 +23,7 @@
               	</div>
 
               	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Sala Esquinero Dimer</font></h4>
+                   <h4><font color="#DF3A01">Comedor 1</font></h4>
       				<HR >
 
       				<P style="text-align: center;">
@@ -54,7 +54,7 @@
               	</div>
 
               	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Sala Esquinero Dimer</font></h4>
+                   <h4><font color="#DF3A01">Comedor 2</font></h4>
       				<HR >
 
       				<P style="text-align: center;">
@@ -85,7 +85,7 @@
               	</div>
 
               	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Sala Esquinero Dimer</font></h4>
+                   <h4><font color="#DF3A01">Comedor 3</font></h4>
       				<HR >
 
       				<P style="text-align: center;">

@@ -208,8 +208,8 @@ document.getElementById('oculto').style.display = 'none';}
         <ul class="nav nav-pills">
         <li role="presentation" ><a href="salas.php">Sala<span class="divider">|</span></a></li>
         <li role="presentation"><a href="comedor.php">Comedor<span class="divider">|</span></a></li>
-        <li role="presentation"><a href="recamaras.php">Recamara<span class="divider">|</span></a></li>
-        <li role="presentation"><a href="estudio.php">Estudio y oficina<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="recamaras.php">Recamaras<span class="divider">|</span></a></li>
+        <li role="presentation"><a href="estudios.php">Estudio y oficina<span class="divider">|</span></a></li>
       </ul>
     </div>
     </div>
