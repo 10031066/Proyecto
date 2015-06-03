@@ -40,9 +40,12 @@
 
          <h4><font color="#DF3A01">Informacion de contacto</font></h4>
           <span style="color:#424242">
-          <p align="justify"><?php echo $fila['nomcte']; ?><br>
-            <?php echo $fila['mailcte']; ?>
-			
+          <p align="justify">
+            Nombre: <?php echo $fila['nomcte']." ".$fila['apepat']." ".$fila['apemat'];?> <br>
+            Direccion: <?php echo $fila['dircte'];?> <br>
+            Teléfono: <?php echo $fila['telcte']; ?><br>
+            Email:  <?php echo $fila['mailcte'];?><br>
+        			
             <br><input class="btn btn-primary btn-xs" type="submit" value="Cambiar contraseña" value="Mostrar" onclick="mostrar()"><br> <br>            
             <HR>
             <div class="panel panel-default" id='oculto' style='display:none;'>
@@ -76,32 +79,6 @@
 
             <HR>
           </P>
-
-  <div class="col-md-6">
-          <h4><font color="#DF3A01">Dirección de facturación predeterminada</font></h4>
-          <HR >
-
-            <span style="color:#424242">
-            <p align="justify">
-    Nombre: <?php echo $fila['nomcte']." ".$fila['apepat']." ".$fila['apemat'];?> <br>
-    Direccion: <?php echo $fila['dircte'];?> <br>
-    Teléfono: <?php echo $fila['telcte']; ?><br>
-    Email:  <?php echo $fila['mailcte'];?><br>
-           </P>
-    </div>
-
-    <div class="col-md-6">
-          <h4><font color="#DF3A01">Dirección de entrega predeterminada</font></h4>
-          <HR >
-
-          <span style="color:#424242"> 
-          <p align="justify">
-    Nombre: karla erika torres rodriguez <br>
-    Direccion: lopez rayon <br>
-    Teléfono: 4171554153 <br>
-    Email:  <br>
-           </P>
-    </div>
 
   </div>
 
