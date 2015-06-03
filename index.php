@@ -77,23 +77,28 @@
 		</div>
 
 		<div class="col-md-4">
-		<img src="img/ofertas/comedor.png" id="img1" width="300" height="250">
+		<img src="img/ofertas/comedor.png" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+    onmouseout="javascript:this.width=250;this.height=250"/>
 
 		<div class="col-md-12">
-		<img src="img/ofertas/keia.jpg" id="img1" width="300" height="250">
+		<img src="img/ofertas/keia.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+    onmouseout="javascript:this.width=250;this.height=250"/>
 		</div>
 
 		</div>
 
 		<div class="col-md-4">
-		<img src="img/ofertas/antesydespues.jpg" id="img1" width="900" height="400">
+		<img src="img/ofertas/antesydespues.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500" 
+     onmouseout="javascript:this.width=250;this.height=250"/>
 		</div>
 
 		<div class="col-md-4">
-		<img src="img/ofertas/comedor.png" id="img1" width="300" height="250">
+		<img src="img/ofertas/comedor.png" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+    onmouseout="javascript:this.width=250;this.height=250"/>
 
 		<div class="col-md-12">
-		<img src="img/ofertas/keia.jpg" id="img1" width="300" height="250">
+		<img src="img/ofertas/keia.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+    onmouseout="javascript:this.width=250;this.height=250"/>
 		</div>
 		</div>
 		

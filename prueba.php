@@ -3,7 +3,24 @@
 ?>
 
 <div class="row">
-  <div class="colm-md-12"></div>
+
+	<div class="col-md-4">
+          <h4><font >Tu producto</font></h4>
+          <HR >
+
+    </div>
+
+    <div class="col-md-4">
+          <h4><font >Precio</font></h4>
+          <HR >
+
+    </div>
+
+    <div class="col-md-4">
+          <h4><font >Cantidad</font></h4>
+          <HR >
+    </div>
+          
 </div>
 
 
