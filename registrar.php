@@ -1,6 +1,7 @@
 	
 <?php
 	include 'top.php';
+	include 'conexion.php';
 	
 	if(isset($_REQUEST['Nombre'])){
 		registrarCliente($_REQUEST['Nombre'],$_REQUEST['ApePaterno'],$_REQUEST['ApeMaterno'],$_REQUEST['Dir'],$_REQUEST['telefono'],$_REQUEST['email1'],$_REQUEST['email2'],$_REQUEST['edad'],$_REQUEST['genero']);

@@ -1,10 +1,12 @@
 <?php
-	require 'PHPMailerAutoload.php';
 	function registraEmpresa($nombre,$direccion,$telefono,$email1,$email2){
 		if($email1==$email2){
 			$pass = gererarPass();
 			$query = "call abcempresa (1,'".$nombre."','".$direccion."','"
 			.$telefono."','".$email1."','".$pass."')";
+			
+			ejecutaQuery($query);
+			
 		}else{
 			echo "Ambas direcciones de correo son distintas\n";
 		}
@@ -14,19 +16,19 @@
 		if($email1==$email2){
 			$pass = gererarPass();
 			$query = "call abcclientes (1,'".$nombre."','".$apellidoP."','".$apellidoM."','".$direccion."','"
-			.$telefono."','".$email1."','".$genero."','".$edad."',1,'".$pass."')";
+			.$telefono."','".$email1."','".$genero."','".$edad."',1,'".md5($pass)."')";
 			
 			ejecutaQuery($query);
 			
 			$query = "Select idcte from clientes where mailcte='".$email1."'";
-			$resultado = $SQLi->query($query);
+			$resultado = ejecutaQuery($query);
 			
 			$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 			//var_dump($fila);
 			
-			enviaCorreo($email1,$fila["idcte"],$pass);
+			//enviaCorreo($email1,$fila["idcte"],$pass);
 			
-			$SQLi->close();
+			echo "Usuario: ".$fila["idcte"]."<br>Pass: ".$pass;
 		}else{
 			echo "Ambas direcciones de correo son distintas\n";
 		}
@@ -40,17 +42,14 @@
 				. $SQLi->connect_error);
 			}
 			//echo $query;
-			
-			if($SQLi->query($query)==true){
-				echo "<br>Se ha registrado con exito<br>";
-			}else{
-				echo "<br>Ha ocurrido un error al registrar<br>";
-			}
+			$resultado =$SQLi->query($query);
+			$SQLi->close();
+			return $resultado;
 	}
 	
 	function login($usuario,$pass){
 		$SQLi = new mysqli("localhost","root",'','proyectomuebles');
-		$query = "SELECT * FROM clientes where idcte='".$usuario."' and pass='".$pass."'";
+		$query = "SELECT * FROM clientes where idcte='".$usuario."' and pass='".md5($pass)."'";
 		$resultado = $SQLi->query($query);
 		if($resultado->num_rows>0){
 			iniciaSesion($usuario);
@@ -84,13 +83,27 @@
 	}
 	
 	function enviaCorreo($destino,$usuario,$pass){
-		$titulo    = 'Usuario y contraseña ';
-		$mensaje   = 'Usuario: '.$usuario."\nContraseña: ".$pass;
-		if(mail($destino, $titulo, $mensaje)){
-			echo "<br>Recibira un correo con su informacion a ".$destino;
-		}else{
-			echo "Ha ocurrido un error al enviar el correo";
-		}
-		
+	require_once 'PHPMailer-master/PHPMailerAutoload.php';
+	 $mail = new PHPMailer(); 
+	 
+    $mail -> From = 'greedsama23@gmail.com';
+	$mail -> FromName = "Foo";
+	$mail -> AddAddress ($destino);
+	$mail -> Subject = "Test";
+	$mail -> Body = "<h3>From GMail!</h3>";
+	$mail -> IsHTML (true);
+
+	$mail->IsSMTP();
+	$mail->Host = 'tls://smtp.gmail.com:587';
+	$mail->SMTPAuth = true;
+	$mail->Username = 'greedsama23@gmail.com';
+	$mail->Password = 'Irredimible12';
+      
+    if(!$mail->Send()) {
+        echo 'Error: ' . $mail->ErrorInfo;
+	}
+	else {
+		echo 'Mail enviado!';
+	}
 	}
 ?>
