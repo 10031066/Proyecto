@@ -190,8 +190,7 @@ document.getElementById('oculto').style.display = 'none';}
 										 <?php } ?>
                                      </li>
 
-			  	<li role="presentation" class="active"><a href="#"><img src="img/pedido.jpg" id="img1" width="30" height="15">Mis pedidos</a></li>
-          </ul>
+			  	</ul>
 
 			</div>
 
