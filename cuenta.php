@@ -47,12 +47,11 @@
 
          <h4><font color="#DF3A01">Informacion de contacto</font></h4>
           <span style="color:#424242">
-<<<<<<< HEAD
           <p align="justify"><?php echo $fila['nomcte']; ?><br>
             <?php echo $fila['mailcte']; ?>
 			
             <?php include '/extras/FormNuevaPass.php'; ?>
-=======
+
           <p align="justify">
             Nombre: <?php echo $fila['nomcte']." ".$fila['apepat']." ".$fila['apemat'];?> <br>
             Direccion: <?php echo $fila['dircte'];?> <br>
@@ -89,7 +88,6 @@
 			</form>
               </div>
             </div>
->>>>>>> 46c5d9d23bfd47a55946e09952d5b02dec59d3d5
 
             <HR>
           </P>
