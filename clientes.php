@@ -2,14 +2,6 @@
 	include 'top.php';
 ?>
 
-  
-
-  <div class="row">
-    <div class="col-md-12">
-          <MARQUEE BEHAVIOR=alternate BGCOLOR="#FF7070"><FONT FACE=arial>--Ingrese sus datos--</FONT></MARQUEE>
-    </div>
-          
-  </div>
 
   <div class="row">
     <div class="col-md-2">
