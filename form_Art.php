@@ -35,8 +35,25 @@ include 'conexion.php';
 </div>
 </div>      
       
-      
-    </div>
+         <br>
+          <label for="foto" class="col-lg-2 control-label">Imagen</label>
+          <div class="col-lg-4">
+          <input class="form-control" type="file" name="Imagen" id="Imagen" required multiple>
+          </div> 
+          
+          <br>
+          <br>
+<br>
+        <div class="col-lg-8">
+          <div class ="from-group">
+          <input
+            class="btn btn-primary"
+          type="submit" value="Guardar">
+</div>
+        
+        </div>
+        </div> 
+
   </div>
 
 

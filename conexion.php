@@ -99,9 +99,11 @@
 		$query = "Select * from ".$tabla." where id='".$_SESSION['user']."'";
 		$resultado = ejecutaQuery($query);
 		$fila = $resultado->fetch_array(MYSQLI_ASSOC);		 
-		if($fila['pass']==md5($REQUEST['antigua'])){
-			if($_REQUEST['email1']==$_REQUEST['email2']){
-				$query = "UPDATE ".$tabla." SET pass='".md5($_REQUEST['email1'])."' where id='".$_SESSION['user']."'";
+		//echo $fila['pass']."   ".md5($antigua);
+		if($fila['pass']==md5($antigua)){
+			if($email1==$email2){
+				$query = "UPDATE ".$tabla." SET pass='".md5($email1)."' where id='".$_SESSION['user']."'";
+				
 				ejecutaQuery($query);
 				echo "La contraseña se ha actualizado";
 			}else{
