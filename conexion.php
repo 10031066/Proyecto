@@ -58,7 +58,7 @@
 		$resultado = ejecutaQuery($query);
 		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 		if($resultado->num_rows>0){
-			iniciaSesion($usuario,"empresa",$fila['nom']);
+			iniciaSesion($usuario,"empresa",$fila['nom'],$fila['email']);
 			
 			echo "<script type='text/javascript'>alert('Bienvenido Usuario');</script>";
 		}else{
@@ -72,7 +72,7 @@
 		$resultado = ejecutaQuery($query);
 		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 		if($resultado->num_rows>0){
-			iniciaSesion($usuario,"clientes",$fila['nomcte']);
+			iniciaSesion($usuario,"clientes",$fila['nomcte'],$fila['mailcte']);
 			
 			echo "<script type='text/javascript'>alert('Bienvenido Usuario');</script>";
 		}else{
@@ -80,9 +80,10 @@
 		}
 	}
 	
-	function iniciaSesion($usuario,$tabla,$nombre){//Carga los valores del cliente en la sesion
+	function iniciaSesion($usuario,$tabla,$nombre,$correo){//Carga los valores del cliente en la sesion
 
 		$_SESSION['user']=$usuario;
+		$_SESSION['correo']=$correo;
 		switch($tabla){
 			case "clientes":
 				$_SESSION['NomUser']=$nombre;
