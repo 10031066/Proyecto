@@ -118,8 +118,9 @@ document.getElementById('oculto').style.display = 'none';}
      	<div class="col-md-4">
 	    		<a href="index.php"><img src="img/logo1.png"alt="..." id="img1" width="250" height="300" class="img-circle"></a>
 		</div>
+    <div class="col-md-2"></div>
 
-         <div class="col-md-8">
+         <div class="col-md-6">
             <div class="panel panel-default">
 
               <div class="panel-body" align="right">
