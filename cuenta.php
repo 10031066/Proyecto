@@ -1,5 +1,13 @@
 <?php session_start();
- include 'top.php'
+	include 'conexion.php';
+	include 'top.php';
+ 
+ if(isset($_SESSION['user'])){
+	 $query = "Select * from clientes where id='".$_SESSION['user']."'";
+	 echo $query;
+	 $resultado = ejecutaQuery($query);
+	 $fila = $resultado->fetch_array(MYSQLI_ASSOC);
+ }
 ?>
 
 <div class="row">
@@ -32,8 +40,8 @@
 
          <h4><font color="#DF3A01">Informacion de contacto</font></h4>
           <span style="color:#424242">
-          <p align="justify"><?php echo $_SESSION['NomUser']; ?><br>
-            <?php echo $_SESSION['correo']; ?> 
+          <p align="justify"><?php echo $fila['nomcte']; ?><br>
+            <?php echo $fila['mailcte']; ?> 
 
             <br><input class="btn btn-primary btn-xs" type="submit" value="Cambiar contraseña" value="Mostrar" onclick="mostrar()"><br> <br> 
             
@@ -76,10 +84,10 @@
 
             <span style="color:#424242">
             <p align="justify">
-    Nombre: karla erika torres rodriguez <br>
-    Direccion: lopez rayon <br>
-    Teléfono: 4171554153 <br>
-    Email:  <br>
+    Nombre: <?php echo $fila['nomcte']." ".$fila['apepat']." ".$fila['apemat'];?> <br>
+    Direccion: <?php echo $fila['dircte'];?> <br>
+    Teléfono: <?php echo $fila['telcte']; ?><br>
+    Email:  <?php echo $fila['mailcte'];?><br>
            </P>
     </div>
 

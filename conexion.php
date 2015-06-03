@@ -25,7 +25,7 @@
 			//echo $query;
 			ejecutaQuery($query);
 			
-			$query = "Select id from clientes where mailcte='".$email1."'";
+			$query = "Select * from clientes where mailcte='".$email1."'";
 			$resultado = ejecutaQuery($query);
 			
 			$fila = $resultado->fetch_array(MYSQLI_ASSOC);
