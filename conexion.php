@@ -4,7 +4,7 @@
 			$pass = gererarPass();
 			$query = "call abcEmpresa ('','".$nombre."','".$direccion."','"
 			.$telefono."','".$email1."','".md5($pass)."',1)";
-			echo $query;
+			//echo $query;
 			ejecutaQuery($query);
 			$query = "Select id from empresa where email='".$email1."'";
 			$resultado = ejecutaQuery($query);
@@ -52,33 +52,43 @@
 			return $resultado;
 	}
 	
-	function loginCliente($usuario,$pass){
-		$SQLi = new mysqli("localhost","root",'','proyectomuebles');
-		$query = "SELECT * FROM clientes where id='".$usuario."' and pass='".md5($pass)."'";
-		$resultado = $SQLi->query($query);
+	function loginEmpresa($usuario,$pass){
+		$query = "SELECT * FROM empresa where id='".$usuario."' and pass='".md5($pass)."'";
+		//echo $query;
+		$resultado = ejecutaQuery($query);
+		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 		if($resultado->num_rows>0){
-			iniciaSesion($usuario,"clientes");
+			iniciaSesion($usuario,"empresa",$fila['nom']);
 			
 			echo "<script type='text/javascript'>alert('Bienvenido Usuario');</script>";
 		}else{
 			echo "<script type='text/javascript'>alert('El Usuario y contraseña no coinciden');</script>";
 		}
-		$SQLi->close();
 	}
 	
-	function iniciaSesion($usuario,$tabla){//Carga los valores del cliente en la sesion
-		$SQLi = new mysqli("localhost","root",'','proyectomuebles');
-		$query = "SELECT * FROM ".$tabla." where id='".$usuario."'";
-		$resultado = $SQLi->query($query);
-		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
+	function loginCliente($usuario,$pass){
 		
+		$query = "SELECT * FROM clientes where id='".$usuario."' and pass='".md5($pass)."'";
+		$resultado = ejecutaQuery($query);
+		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
+		if($resultado->num_rows>0){
+			iniciaSesion($usuario,"clientes",$fila['nomcte']);
+			
+			echo "<script type='text/javascript'>alert('Bienvenido Usuario');</script>";
+		}else{
+			echo "<script type='text/javascript'>alert('El Usuario y contraseña no coinciden');</script>";
+		}
+	}
+	
+	function iniciaSesion($usuario,$tabla,$nombre){//Carga los valores del cliente en la sesion
+
 		$_SESSION['user']=$usuario;
 		switch($tabla){
 			case "clientes":
-				$_SESSION['NomUser']=$fila['nomcte'];
+				$_SESSION['NomUser']=$nombre;
 			break;
 			case "empresa":
-				$_SESSION['NomEmpresa']=$fila['nom'];
+				$_SESSION['NomEmpresa']=$nombre;
 			break;
 		}
 		
