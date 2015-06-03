@@ -21,6 +21,16 @@
   	  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 	  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 
+    <script type="text/javascript">
+function mostrar(){
+document.getElementById('oculto').style.display = 'block';}
+</script>
+
+<script type="text/javascript">
+function ocultar(){
+document.getElementById('oculto').style.display = 'none';}
+</script>
+
     <script type="text/javascript" charset="utf-8">
     $(window).load(function() {
       $('.flexslider').flexslider({

@@ -2,77 +2,95 @@
  include 'top.php'
 ?>
 
-<div class="row">
-  <div class="colm-md-12">
-    <h4><font >Mi cuenta</font></h4>
+  <div class="row">
+    <div class="col-md-2">
+      <img src="img/public.png" width="300" />
+      <img src="img/public1.png" width="300" />
+      <br>
+      <img src="img/public2.png" width="300" />
+
+
+      </div>
+
+  <div class="col-md-8">
+    <h4><font color="#DF3A01">Mi cuenta</font></h4>
+          <span style="color:#424242">
           <p align="justify">Hola karla erika torres rodriguez <br>
             Desde la seccion Mi Cuenta, puedes consultar toda la actividad reciente de tus pedidos y actualizar 
             tu información personal. Selecciona los links de la izquierda para ver o editar tu información.
           </P>
 
-  </div>
-</div>
-
-<div class="row">
-  <div class="colm-md-12">
-    <h4><font >Informacion de contacto</font></h4>
+         <h4><font color="#DF3A01">Informacion de contacto</font></h4>
+          <span style="color:#424242">
           <p align="justify">karla erika torres rodriguez<br>
-            karlita_erika_07_14@hotmail.com <input class="btn btn-primary" type="submit" value="Cambiar correo" >
+            karlita_erika_07_14@hotmail.com 
 
-
-            <div class="panel panel-default">
+            <br><input class="btn btn-primary btn-xs" type="submit" value="Cambiar contraseña" value="Mostrar" onclick="mostrar()"><br> <br> 
+            
+            <HR>
+            <div class="panel panel-default" id='oculto' style='display:none;'>
               <div class="panel-body">
 
-                <label for="CorreoNue" class="col-lg-6 control-label">Correo Nuevo: </label>
+                <div class="col-md-12">
+                   <label for="email1" class="col-lg-6 control-label">Contraseña actual: </label>
                    <div class="col-lg-6">
-                  <input type="email" class="form-control" name="CorreoNue">
-                  </div>
+                   <input type="email" class="form-control" name="email1">
+                </div>
+              </div>
 
-                <label for="ConfCoreNue" class="col-lg-6 control-label">Confirmar correo: </label>
+                <div class="col-md-12">
+                   <label for="email1" class="col-lg-6 control-label">Nueva contraseña: </label>
                    <div class="col-lg-6">
-                  <input type="email" class="form-control" name="ConfCoreNue">
-                  </div>
+                   <input type="email" class="form-control" name="email1">
+                </div>
+              </div>
 
-                <input class="btn btn-primary" type="submit" value="Guardar" >
+              <div class="col-md-12">
+                  <label for="email2" class="col-lg-6 control-label">Confirmar contraseña: </label>
+                <div class="col-lg-6">
+                  <input type="email" class="form-control" name="email2">
+                </div>
+              </div>
+              
+              <input class="btn btn-primary btn-xs" type="submit" value="Guardar" value="Ocultar" onclick="ocultar()">
 
               </div>
             </div>
 
-            <input class="btn btn-primary" type="submit" value="Cambiar contraseña" ><br><HR>
-            <input class="btn btn-primary" type="submit" value="Editar informacion" >
+            <HR>
           </P>
 
-  </div>
-</div>
-
-<div class="row">
-
-	<div class="col-md-6">
-          <h4><font >Dirección de facturación predeterminada</font></h4>
+  <div class="col-md-6">
+          <h4><font color="#DF3A01">Dirección de facturación predeterminada</font></h4>
           <HR >
 
+            <span style="color:#424242">
             <p align="justify">
     Nombre: karla erika torres rodriguez <br>
     Direccion: lopez rayon <br>
     Teléfono: 4171554153 <br>
     Email:  <br>
            </P>
-
-
-
     </div>
 
     <div class="col-md-6">
-          <h4><font >Dirección de entrega predeterminada</font></h4>
+          <h4><font color="#DF3A01">Dirección de entrega predeterminada</font></h4>
+          <HR >
+
+          <span style="color:#424242"> 
           <p align="justify">
     Nombre: karla erika torres rodriguez <br>
     Direccion: lopez rayon <br>
     Teléfono: 4171554153 <br>
     Email:  <br>
            </P>
-          <HR >
     </div>
 
+  </div>
+
+<div class="col-md-2">
+  
+</div>
 
           
 </div>
