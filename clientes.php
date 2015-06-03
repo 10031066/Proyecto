@@ -3,10 +3,6 @@
 ?>
 
 
-  <div class="row">
-    <div class="col-md-2">
-          <label>Ingrese sus datos</label>
-    </div>
  <form action="registrar.php" method="POST">
     <div class="col-md-8">
           <div class="col-md-12">
