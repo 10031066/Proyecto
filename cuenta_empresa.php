@@ -4,7 +4,7 @@
  
   if(isset($_SESSION['user'])){
 	 $query = "Select * from empresa where id='".$_SESSION['user']."'";
-	 echo $query;
+	 //echo $query;
 	 $resultado = ejecutaQuery($query);
 	 $fila = $resultado->fetch_array(MYSQLI_ASSOC);
 	 
@@ -14,9 +14,6 @@
 	}else{
 		echo "<script type='text/javascript'>alert('No Deberias estar aqui!!');</script>";
 	}
-}else{
-	echo "<script type='text/javascript'>alert('No Deberias estar aqui!!');</script>";
-}
 
 ?>
 

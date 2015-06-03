@@ -54,14 +54,14 @@
 	
 	function loginEmpresa($usuario,$pass){
 		$query = "SELECT * FROM empresa where id='".$usuario."' and pass='".md5($pass)."'";
-		//echo $query;
+		echo $query;
 		$resultado = ejecutaQuery($query);
 		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 		if($resultado->num_rows>0){
 			iniciaSesion($usuario,"empresa",$fila['nom'],$fila['email']);
 			
 			echo "<script type='text/javascript'>alert('Bienvenido Usuario');</script>";
-		}else{
+		}else{	
 			echo "<script type='text/javascript'>alert('El Usuario y contraseña no coinciden');</script>";
 		}
 	}
