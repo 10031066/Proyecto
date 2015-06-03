@@ -2,11 +2,16 @@
 	function registraEmpresa($nombre,$direccion,$telefono,$email1,$email2){
 		if($email1==$email2){
 			$pass = gererarPass();
-			$query = "call abcempresa (1,'".$nombre."','".$direccion."','"
-			.$telefono."','".$email1."','".$pass."')";
-			
+			$query = "call abcEmpresa ('','".$nombre."','".$direccion."','"
+			.$telefono."','".$email1."','".md5($pass)."',1)";
+			echo $query;
 			ejecutaQuery($query);
+			$query = "Select id from empresa where email='".$email1."'";
+			$resultado = ejecutaQuery($query);
 			
+			$fila = $resultado->fetch_array(MYSQLI_ASSOC);
+			
+			echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
 		}else{
 			echo "Ambas direcciones de correo son distintas\n";
 		}
@@ -15,12 +20,12 @@
 	function registrarCliente($nombre,$apellidoP,$apellidoM,$direccion,$telefono,$email1,$email2,$edad,$genero){
 		if($email1==$email2){
 			$pass = gererarPass();
-			$query = "call abcclientes (1,'".$nombre."','".$apellidoP."','".$apellidoM."','".$direccion."','"
+			$query = "call abcclientes ('','".$nombre."','".$apellidoP."','".$apellidoM."','".$direccion."','"
 			.$telefono."','".$email1."','".$genero."','".$edad."',1,'".md5($pass)."')";
-			
+			//echo $query;
 			ejecutaQuery($query);
 			
-			$query = "Select idcte from clientes where mailcte='".$email1."'";
+			$query = "Select id from clientes where mailcte='".$email1."'";
 			$resultado = ejecutaQuery($query);
 			
 			$fila = $resultado->fetch_array(MYSQLI_ASSOC);
@@ -28,7 +33,7 @@
 			
 			//enviaCorreo($email1,$fila["idcte"],$pass);
 			
-			echo "Usuario: ".$fila["idcte"]."<br>Pass: ".$pass;
+			echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
 		}else{
 			echo "Ambas direcciones de correo son distintas\n";
 		}
@@ -47,30 +52,36 @@
 			return $resultado;
 	}
 	
-	function login($usuario,$pass){
+	function loginCliente($usuario,$pass){
 		$SQLi = new mysqli("localhost","root",'','proyectomuebles');
-		$query = "SELECT * FROM clientes where idcte='".$usuario."' and pass='".md5($pass)."'";
+		$query = "SELECT * FROM clientes where id='".$usuario."' and pass='".md5($pass)."'";
 		$resultado = $SQLi->query($query);
 		if($resultado->num_rows>0){
-			iniciaSesion($usuario);
+			iniciaSesion($usuario,"clientes");
 			
-			$SQLi->close();
 			echo "<script type='text/javascript'>alert('Bienvenido Usuario');</script>";
 		}else{
 			echo "<script type='text/javascript'>alert('El Usuario y contraseña no coinciden');</script>";
-			$SQLi->close();
 		}
-		
+		$SQLi->close();
 	}
 	
-	function iniciaSesion($usuario){//Carga los valores del cliente en la sesion
+	function iniciaSesion($usuario,$tabla){//Carga los valores del cliente en la sesion
 		$SQLi = new mysqli("localhost","root",'','proyectomuebles');
-		$query = "SELECT * FROM clientes where idcte='".$usuario."'";
+		$query = "SELECT * FROM ".$tabla." where id='".$usuario."'";
 		$resultado = $SQLi->query($query);
 		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 		
 		$_SESSION['user']=$usuario;
-		$_SESSION['NomUser']=$fila['nomcte'];
+		switch($tabla){
+			case "clientes":
+				$_SESSION['NomUser']=$fila['nomcte'];
+			break;
+			case "empresa":
+				$_SESSION['NomEmpresa']=$fila['nom'];
+			break;
+		}
+		
 	}
 	
 	function gererarPass(){

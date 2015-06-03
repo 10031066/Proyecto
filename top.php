@@ -133,7 +133,14 @@ document.getElementById('oculto').style.display = 'none';}
 												if(isset($_SESSION['user'])){
 													?>
 									            <li role="presentation" class="active"><a href="carrito.php" class="color-1"><img src="img/carrito.jpg" id="img1" width="35" height="15">Mi carrito <span class="badge">2</span></a></li>
-												      <li role="presentation" class="active">Bienvenido <?php echo $_SESSION['NomUser']?></a></li>
+												      <li role="presentation" class="active">Bienvenido 
+													  <?php 
+															if(isset($_SESSION['NomUser'])){
+																echo $_SESSION['NomUser'];
+															}else if($_SESSION['NomEmpresa']){
+																echo $_SESSION['NomEmpresa'];
+															}
+													  ?></a></li>
                         <a href="index.php?salir=si">Salir</a>
 										<?php		}else{
 												  
@@ -164,15 +171,23 @@ document.getElementById('oculto').style.display = 'none';}
 			  	
           <li role="presentation" class="dropdown "><a href="#" class="dropdown-toggle color-1" data-toggle="dropdown" role="button" aria-expanded="false">
           <img src="img/pedidos.jpg" id="img1" width="30" height="15">Vende con nosotros<span class="caret"></span></a>
-                                          <ul class="dropdown-menu" role="menu" class="ca-menu" id="desplegable">
-                                              <li><P ALIGN=center>Usuario</P></a></li>
-                                              <li><input type="usuario" class="form-control" id="usuario"></li>
+                                         <?php if(!isset($_SESSION['user'])){
+											 
+										 
+										 ?>
+										  <ul class="dropdown-menu" role="menu" class="ca-menu" id="desplegable">
+                                              <form action="index.php" method="POST">
+											  <li><P ALIGN=center>Usuario</P></a></li>
+                                              <li><input type="usuario" class="form-control" name="NombreVendedor"></li>
                                               <li><P ALIGN=center></span> Contraseña</P></a></li>
-                                              <li><input type="contraseña" class="form-control" id="contraseña"></li>
+                                              <li><input type="contraseña" class="form-control" name="pass"></li>
                                               <li><input class="btn btn-primary" type="submit" value="Acceder"></li>
                                               <li class="divider"></li>
+											  </form>
+											  
                                               <li><a href="vende_nosotros.php"><P ALIGN=center></span> Registrarme</a></li>
                                          </ul>
+										 <?php } ?>
                                      </li>
 
 			  	<li role="presentation" class="active"><a href="#"><img src="img/pedido.jpg" id="img1" width="30" height="15">Mis pedidos</a></li>

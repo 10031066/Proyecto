@@ -1,5 +1,6 @@
-<?php
- include 'top.php'
+<?php session_start();
+include 'conexion.php'; 
+ include 'top.php';
 ?>
 
 <div class="row">
@@ -49,5 +50,5 @@
 
 
 <?php
- include 'bottom.html'
+ include 'bottom.html';
 ?>

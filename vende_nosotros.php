@@ -38,68 +38,7 @@
       <div class="col-md-8">
 		<form action="registrar.php" method="POST">
 
-        <div class="col-md-12">
-            <h4><font color="#DF3A01">---------------- Datos del usuario ------------------</font></h4>
-             <HR >
-          </div>
-
-          <div class="col-md-12">
-          <label for="Nombre" class="col-lg-6 control-label">Nombre: </label>
-           <div class="col-lg-6">
-          <input type="text" class="form-control" name="NombreVendedor">
-          </div>
-          </div>
-		  
-			<div class="col-md-12">
-          <label for="ApePaterno" class="col-lg-6 control-label">Ape. Paterno: </label>
-          <div class="col-lg-6">
-          <input type="tex" class="form-control" name="ApePaterno">
-          </div>
-          </div>
-		  
-          <div class="col-md-12">
-          <label for="ApeMaterno" class="col-lg-6 control-label">Ape. Materno: </label>
-          <div class="col-lg-6">
-          <input type="text" class="form-control" name="ApeMaterno">
-          </div>
-          </div>
-
-          
-
-          <div class="col-md-12">
-          <label for="Dir" class="col-lg-6 control-label">Direccion: </label>
-          <div class="col-lg-6">
-          <input type="tex" class="form-control" name="Dir">
-          </div>
-          </div>
-
-          <div class="col-md-12">
-          <label for="telefono" class="col-lg-6 control-label">Telefono: </label>
-          <div class="col-lg-6">
-          <input type="text" class="form-control" name="telefono">
-          </div>
-          </div>
-
-          <div class="col-md-12">
-           <label for="email1" class="col-lg-6 control-label">Email: </label>
-           <div class="col-lg-6">
-           <input type="email" class="form-control" name="email1">
-         </div>
-         </div>
-
-          <div class="col-md-12">
-          <label for="email2" class="col-lg-6 control-label">Confir E-mail: </label>
-          <div class="col-lg-6">
-          <input type="email" class="form-control" name="email2">
-          </div>
-          </div>
-
-          <div class="col-md-12">
-          <label for="radio" class="col-lg-6 control-label">sexo: </label>
-          <input type="radio" name="genero" value="Male">Male<BR>
-            <input type="radio"name="genero" value="Female">Female
-          </div>
-
+        
           <div class="col-md-12">
             <h4><font color="#DF3A01">---------------- Datos de la empresa ------------------</font></h4>
              <HR >
@@ -108,31 +47,37 @@
           <div class="col-md-12">
           <label class="col-lg-6 control-label">Nombre de la empresa: </label>
           <div class="col-lg-6">
-          <input type="text" class="form-control" name="empresa">
+          <input type="text" class="form-control" name="NombreVendedor">
           </div>
           </div>
 
           <div class="col-md-12">
           <label class="col-lg-6 control-label">Direccion de la empresa: </label>
           <div class="col-lg-6">
-          <input type="text" class="form-control" name="dirempresa">
+          <input type="text" class="form-control" name="Direccion">
           </div>
           </div>
 
           <div class="col-md-12">
           <label class="col-lg-6 control-label">Telefono de la empresa: </label>
           <div class="col-lg-6">
-          <input type="text" class="form-control" name="telempresa">
+          <input type="text" class="form-control" name="telefono">
           </div>
           </div>
 
           <div class="col-md-12">
           <label class="col-lg-6 control-label">Email de la empresa: </label>
           <div class="col-lg-6">
-          <input type="text" class="form-control" name="emailempresa">
+          <input type="text" class="form-control" name="email1">
           </div>
           </div>
-
+			
+			<div class="col-md-12">
+          <label class="col-lg-6 control-label">Repetir email: </label>
+          <div class="col-lg-6">
+          <input type="text" class="form-control" name="email2">
+          </div>
+          </div>
 
           <div class="col-md-12">
             <div class="col-md-5">
