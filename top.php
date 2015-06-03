@@ -141,7 +141,7 @@ document.getElementById('oculto').style.display = 'none';}
 									  <li class="dropdown "><a href="#" class="dropdown-toggle color-1" data-toggle="dropdown" role="button" aria-expanded="false">Iniciar sesion <span class="caret"></span></a>
                                           <ul class="dropdown-menu" role="menu" class="ca-menu" id="desplegable">
                                               
-											  <form ACTION="cuenta.php" method="POST">
+											  <form ACTION="index.php" method="POST">
 												<li><P ALIGN=center>Usuario</P></a></li>
 												<li><input type="usuario" class="form-control" name="usuario"></li>
 												<li><P ALIGN=center></span> Contraseña</P></a></li>
