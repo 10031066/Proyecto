@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
  include 'top.php'
 ?>
 
@@ -25,15 +25,15 @@
   <div class="col-md-8">
     <h4><font color="#DF3A01">Mi cuenta</font></h4>
           <span style="color:#424242">
-          <p align="justify">Hola karla erika torres rodriguez <br>
+          <p align="justify">Hola <?php echo $_SESSION['NomUser']; ?><br>
             Desde la seccion Mi Cuenta, puedes consultar toda la actividad reciente de tus pedidos y actualizar 
             tu información personal. Selecciona los links de la izquierda para ver o editar tu información.
           </P>
 
          <h4><font color="#DF3A01">Informacion de contacto</font></h4>
           <span style="color:#424242">
-          <p align="justify">karla erika torres rodriguez<br>
-            karlita_erika_07_14@hotmail.com 
+          <p align="justify"><?php echo $_SESSION['NomUser']; ?><br>
+            <?php echo $_SESSION['correo']; ?> 
 
             <br><input class="btn btn-primary btn-xs" type="submit" value="Cambiar contraseña" value="Mostrar" onclick="mostrar()"><br> <br> 
             
