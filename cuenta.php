@@ -41,10 +41,9 @@
          <h4><font color="#DF3A01">Informacion de contacto</font></h4>
           <span style="color:#424242">
           <p align="justify"><?php echo $fila['nomcte']; ?><br>
-            <?php echo $fila['mailcte']; ?> 
-
-            <br><input class="btn btn-primary btn-xs" type="submit" value="Cambiar contraseña" value="Mostrar" onclick="mostrar()"><br> <br> 
-            
+            <?php echo $fila['mailcte']; ?>
+			
+            <br><input class="btn btn-primary btn-xs" type="submit" value="Cambiar contraseña" value="Mostrar" onclick="mostrar()"><br> <br>            
             <HR>
             <div class="panel panel-default" id='oculto' style='display:none;'>
               <div class="panel-body">
@@ -71,7 +70,7 @@
               </div>
               
               <input class="btn btn-primary btn-xs" type="submit" value="Guardar" value="Ocultar" onclick="ocultar()">
-
+			</form>
               </div>
             </div>
 

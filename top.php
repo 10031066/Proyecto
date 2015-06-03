@@ -210,7 +210,10 @@ document.getElementById('oculto').style.display = 'none';}
         <li role="presentation"><a href="comedor.php">Comedor<span class="divider">|</span></a></li>
         <li role="presentation"><a href="recamaras.php">Recamaras<span class="divider">|</span></a></li>
         <li role="presentation"><a href="estudios.php">Estudio y oficina<span class="divider">|</span></a></li>
-        <li role="presentation"><a href="form_Art.php">Registrar productos<span class="divider">|</span></a></li>
+		<?PHP if(isset($_SESSION['NomEmpresa'])){	
+        echo '<li role="presentation"><a href="form_Art.php">Registrar productos<span class="divider">|</span></a></li>';
+		}
+		?>
       </ul>
     </div>
     </div>
