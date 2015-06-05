@@ -87,13 +87,13 @@
           <div class="col-lg-6">
           <input type="text" class="form-control" name="email2">
           </div>
-          </div>
+      </div>
 
-              <div class="col-md-12">
-                <?php
-                  include 'captcha/captcha.php';
-                ?>
-              </div>
+       <div class="col-md-12">
+            <?php
+            include 'captcha/captcha.php';
+           ?>
+       </div>
 
           <div class="col-md-12">
             <div class="col-md-5">

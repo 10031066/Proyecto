@@ -70,7 +70,7 @@ include 'conexion.php';
           <br>
               <div class="col-md-12">
                 <?php
-                  include 'captcha/captcha.php';
+                  include 'captcha/captcha1.php';
                 ?>
               </div>
           <br>
