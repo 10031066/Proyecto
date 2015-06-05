@@ -182,7 +182,7 @@ document.getElementById('oculto').style.display = 'none';}
 											  <li><P ALIGN=center>Usuario</P></a></li>
                                               <li><input type="usuario" class="form-control" name="NombreVendedor"></li>
                                               <li><P ALIGN=center></span> Contraseña</P></a></li>
-                                              <li><input type="contraseña" class="form-control" name="pass"></li>
+                                              <li><input type="password" class="form-control" name="pass"></li>
                                               <li><input class="btn btn-primary" type="submit" value="Acceder"></li>
                                               <li class="divider"></li>
 											  </form>

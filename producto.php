@@ -1,5 +1,13 @@
-<?php
- include 'top.php'
+<?php session_start(); 
+	include 'conexion.php';
+	include 'top.php';
+	if(!(isset($_SESSION['NomUser']) and isset($_GET['id']))){
+				echo "<script type='text/javascript'>alert('No deberias estar aqui');</script>";
+		//header('index.php');
+	}else{
+		$query="Select * from articulo where id='".$_GET['id']."'";
+		$resultado = ejecutaQuery($query);
+		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 ?>
 
 <div class="row">
@@ -14,7 +22,7 @@
       <div class="col-md-8">
         <div class="panel panel-success">
           <div class="panel-heading">
-            <h3 class="panel-title">Nombre del articulo</h3>
+            <h3 class="panel-title"><?php echo $fila['marca'];?></h3>
           </div>
           <div class="panel-body">
 
@@ -33,18 +41,18 @@
         </div>
 
           <div class="col-md-6">
-            <img src="img/sala1.jpg" width="250" onmouseover="javascript:this.height=900;this.width=900"  
+            <img src="img/articulos/<?php echo $fila['id'];?>.jpg" width="250" onmouseover="javascript:this.height=900;this.width=900"  
                    onmouseout="javascript:this.width=250;this.height=250"/>
-
+			<form action="carrito.php" METHOD="POST">
+			<input type="hidden" value="<?php echo $fila['id'];?>" name="idArticulo">
             <HR><input class="btn btn-primary" type="submit" value="Comprar ahora" >
+			</form>
           </div>
 
           <div class="col-md-3">
            <h4><font color="#DF3A01">Precio</font></h4>
             <P style="text-align: center;">
-                <span style="color:#424242">$ 4,799<br>
-                 3 pagos desde <br>
-                 $ 1,973.83 
+                <span style="color:#424242">$ <?php echo $fila['precio']; ?><br>
                </P>
           </div>
                  
@@ -56,30 +64,7 @@
   <div class="panel-body">
     <h4><font color="#DF3A01">Detalles</font></h4>
 <P style="text-align: justify;">
-<span style="color:#088A29"> 
-    Sala Esquinero Greco<br>
-<span style="color:#424242">
-La Sala Esquinero Greco tiene un diseño elegante y sofisticado, lleno de lujo para tu hogar, su diseño cuenta con 2 piezas, 
-un sofa y un love seat, con terminados en lino color gris para que combine con todos los colores y decoraciones de tu casa. 
-La sala Greco que Linio trae para ti esta llena de comodidad y confort para que disfrutes cada uno de los momentos que pases ahí. 
-Llena tu casa de comodidad, de calidad y espacios creativos. <br>
-<span style="color:#088A29"> 
-Medidas<br>
-<span style="color:#424242">
-Sabemos la importancia que ejercen las medidas a la hora de hacer una nueva adquisición y por eso 
-ponemos a tu disposición las medidas de la sala Greco siendo las siguientes:<br>
-<span style="color:#088A29"> 
-Love Seat<br>
-<span style="color:#424242">
-    85cm de Alto<br>
-    134 cm de Largo<br>
-    88 cm de Ancho<br>
-<span style="color:#088A29"> 
-Sofá<br>
-<span style="color:#424242">
-    85cm de Alto<br>
-    200 cm de Largo<br>
-    88 cm de Ancho<br>
+	<?php echo $fila['descripcion'];?>
   </div>
 </div>
 
@@ -93,5 +78,6 @@ Sofá<br>
 
 
 <?php
- include 'bottom.html'
+	}
+ include 'bottom.html';
 ?>

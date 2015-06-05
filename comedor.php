@@ -1,9 +1,6 @@
 <?php session_start();
 include 'conexion.php'; 
  include 'top.php';
- if(!isset($_SESSION['user'])){
-		header('index.php');
-	}else{
 		$query="Select * from articulo where tipo=2";		 
 ?>
 
@@ -16,7 +13,7 @@ include 'conexion.php';
 	</div>
 </div>
 <?php
-	}
+
 include 'cargaArticulo.php'; 
  include 'bottom.html'
 ?>

@@ -11,7 +11,7 @@ for($i=0;$i<$resultado->num_rows;$i++){
               <div class="panel-body">
 
                 <div class="col-md-12">
-                   <a href="Producto.php"><img src="img/articulos/<?php  echo $fila['id']; ?>.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
+                   <a href="Producto.php?id=<?php  echo $fila['id']; ?> "><img src="img/articulos/<?php  echo $fila['id']; ?>.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
                    onmouseout="javascript:this.width=250;this.height=250"/>
               	</div>
 

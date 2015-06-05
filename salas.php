@@ -1,10 +1,7 @@
 <?php session_start();
 include 'conexion.php'; 
  include 'top.php';
- if(!isset($_SESSION['user'])){
-		header('index.php');
-	}else{
-		$query="Select * from articulo where tipo=1";		 
+$query="Select * from articulo where tipo=1";		 
 ?>
 
 <div class="row">
@@ -17,7 +14,6 @@ include 'conexion.php';
 </div>
 
 <?php 
-	}
 include 'cargaArticulo.php'; 
  include 'bottom.html';
  ?>

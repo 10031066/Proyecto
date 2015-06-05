@@ -6,9 +6,23 @@ include 'conexion.php';
 				echo "<script type='text/javascript'>alert('No deberias estar aqui');</script>";
 		//header('index.php');
 	}else{
+		//echo $_REQUEST['idArticulo'];
+		if(isset($_REQUEST['idArticulo'])){
+			//echo 'hola';
+			$query = "Select * from articulo where id='".$_REQUEST['idArticulo']."'";
+			
+			$resultado = ejecutaQuery($query);
+			$fila = mysqli_fetch_array($resultado);
+			
+			$query ="Insert into carrito VALUES('".$_SESSION['user']."','".$_REQUEST['idArticulo']."','".$fila['marca']."','".$fila['fila']."')";
+			ejecutaQuery($query);
+			echo $query;
+			
+		}
+		
 		$query="Select * from carrito where idCte='".$_SESSION['user']."'";
 		$resultado = ejecutaQuery($query);
-		$fila = $resultado->fetch_array(MYSQLI_ASSOC);		
+			
 ?>
 
 <div class="row">
@@ -46,20 +60,20 @@ include 'conexion.php';
 
 <?php
 	for($i=0;$i<$resultado->num_rows;$i++){
-
+		$fila = $resultado->fetch_array(MYSQLI_ASSOC);	
 ?>
 		<div class="row">
 			<div class="col-md-4">
-			<?php echo $fila[i]['Nombre']; ?>
+			<?php echo $fila['Nombre']; ?>
 			</div>
 			<div class="col-md-2">
-			<?php echo $fila[i]['precio']; ?>
+			<?php echo $fila['precio']; ?>
 			</div>
 			<div class="col-md-2">
-			<?php echo $fila[i]['cantidad']; ?>
+			<?php echo $fila['cantidad']; ?>
 			</div>
 			<div class="col-md-2">
-			<?php echo $fila[i]['precio']*$fila[i]['cantidad']; ?>
+			<?php echo $fila['precio']*$fila['cantidad']; ?>
 			</div>
 			<div class="col-md-2">
 			</div>

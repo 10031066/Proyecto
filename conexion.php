@@ -47,7 +47,7 @@
 		$query ="Select id from articulo where marca='".$marca."' and descripcion='".$descripcion."' and precio=".$precio." and tipo='".$tipo."'";
 		echo $query;
 		$resultado = ejecutaQuery($query);
-			return $resultado->fetch_array(MYSQLI_ASSOC);
+		return $resultado->fetch_array(MYSQLI_ASSOC);
 			
 			
 	}
@@ -66,7 +66,7 @@
 	
 	function loginEmpresa($usuario,$pass){
 		$query = "SELECT * FROM empresa where id='".$usuario."' and pass='".md5($pass)."'";
-		echo $query;
+		//echo $query;
 		$resultado = ejecutaQuery($query);
 		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 		if($resultado->num_rows>0){
