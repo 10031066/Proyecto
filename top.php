@@ -182,7 +182,11 @@ document.getElementById('oculto').style.display = 'none';}
 											  <li><P ALIGN=center>Usuario</P></a></li>
                                               <li><input type="usuario" class="form-control" name="NombreVendedor"></li>
                                               <li><P ALIGN=center></span> Contraseña</P></a></li>
+<<<<<<< HEAD
                                               <li><input type="password" class="form-control" name="pass"></li>
+=======
+                                              <li><input type="192.168.0.8:Proyecto/index.php" class="form-control" name="pass"></li>
+>>>>>>> origin/master
                                               <li><input class="btn btn-primary" type="submit" value="Acceder"></li>
                                               <li class="divider"></li>
 											  </form>
