@@ -40,6 +40,18 @@
 		
 	}
 	
+	function registraArticulo($marca,$descripcion,$precio,$tipo){
+		$query = "Call abcarticulo('','".$marca."','".$descripcion."','".$precio."',1,'".$tipo."')";
+		ejecutaQuery($query);
+			
+		$query ="Select id from articulo where marca='".$marca."' and descripcion='".$descripcion."' and precio=".$precio." and tipo='".$tipo."'";
+		echo $query;
+		$resultado = ejecutaQuery($query);
+			return $resultado->fetch_array(MYSQLI_ASSOC);
+			
+			
+	}
+	
 	function ejecutaQuery($query){
 		$SQLi = new mysqli("localhost","root",'','proyectomuebles');
 			if ($SQLi->connect_error) {

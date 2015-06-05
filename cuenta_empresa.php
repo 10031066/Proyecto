@@ -7,7 +7,6 @@
 	 //echo $query;
 	 $resultado = ejecutaQuery($query);
 	 $fila = $resultado->fetch_array(MYSQLI_ASSOC);
-	 
 	 if(isset($_REQUEST['antigua'])){
 		 actualizaPass($_REQUEST['antigua'],$_REQUEST['email1'],$_REQUEST['email2'],"empresa");
 	 }

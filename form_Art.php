@@ -1,6 +1,25 @@
 <?php session_start();
 include 'conexion.php';
- include 'top.php'
+ include 'top.php';
+ 
+	if(!isset($_SESSION['NomEmpresa'])){
+		echo "<script type='text/javascript'>alert('No deberias estar aqui');</script>";
+	}else{
+		if(isset($_FILES['imagen'])){
+			$target_path = "img\\articulos\\";
+			
+			$fila = registraArticulo($_REQUEST['Marca'],$_REQUEST['Descripcion'],$_REQUEST['Precio'],$_REQUEST['Tipo']);
+			$target_path = $target_path . $fila['id'].".jpg"; 
+			
+			//echo $target_path;
+			//echo $_FILES['imagen']['tmp_name'];
+			if(move_uploaded_file($_FILES['imagen']['tmp_name'], $target_path)) { 
+				echo "El archivo ". basename( $_FILES['imagen']['name']). " ha sido subido";
+				//echo "la imagen se subio";
+			} else{
+				echo "Ha ocurrido un error, trate de nuevo!";
+			}
+		}
 ?>
 
 <div class="row">
@@ -10,35 +29,34 @@ include 'conexion.php';
      <dr>
       <label>REGISTRA NUEV ARTICULO</label>
       <br>
-   <form class="form-horizontal" role="form">
+   <form enctype="multipart/form-data" action="#" METHOD="POST" class="form-horizontal">
              
   <div class="form-group">
     <label for="Marca" class="col-lg-2 control-label">Marca: </label>
     <div class="col-lg-4">
-      <input type="text" class="form-control" id="Marca">
+      <input type="text" class="form-control" name="Marca">
     </div>
   </div>
+  
   <div class="form-group">
     <label for="Descripcion" class="col-lg-2 control-label">Descripcion: </label>
     <div class="col-lg-4">
-      <input type="text" class="form-control" id="Descripcion">
+      <input type="text" class="form-control" name="Descripcion">
     </div>
   </div>
 
 
-   <div class="input-group">
-    <label for="Precio" class="col-lg-2 control-label">Percio: </label>
+      <div class="form-group">
+    <label for="Precio" class="col-lg-2 control-label">Precio: </label>
     <div class="col-lg-4">
-  <span class="input-group-addon">$</span>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar) i" id=Pecio>
-  <span class="input-group-addon">.00</span>
-</div>
-</div>      
+      <input type="text" class="form-control" name="Precio">
+    </div>
+  </div>
       
          <br>
           <label for="foto" class="col-lg-2 control-label">Imagen</label>
           <div class="col-lg-4">
-          <input class="form-control" type="file" name="Imagen" id="Imagen" required multiple>
+          <input class="form-control" type="file" name="imagen" name="Imagen" required multiple>
           </div> 
           
           <br>
@@ -52,15 +70,13 @@ include 'conexion.php';
 </div>
         
         </div>
+		
+		</form>
         </div> 
 
   </div>
 
-
-
-
-
-
 <?php
- include 'bottom.html'
+ include 'bottom.html';
+}
 ?>
