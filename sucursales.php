@@ -2,6 +2,14 @@
 include 'conexion.php';
  include 'top.php';
 ?>
+<div class="row">
+	<div class="col-md-2">
+		<ul class="breadcrumb">
+          <li><a href="index.php">Home</a><span class="divider">|</span></li>
+          <li><a href="Recamaras.php">Sucursales</a> <span class="divider">|</span></li>
+        </ul>
+	</div>
+</div>
 
 <div class="row">
     <div class="col-md-2">
