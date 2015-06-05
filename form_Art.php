@@ -68,6 +68,12 @@ include 'conexion.php';
           </div> 
           
           <br>
+              <div class="col-md-12">
+                <?php
+                  include 'captcha/captcha.php';
+                ?>
+              </div>
+          <br>
           <br>
 <br>
         <div class="col-lg-8">
