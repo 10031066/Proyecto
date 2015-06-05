@@ -105,7 +105,6 @@ document.getElementById('oculto').style.display = 'none';}
       
     </style>
 
-	<style type="text/css"> div{ border: 1px solid black; } </style>
 
 	
 </head>
