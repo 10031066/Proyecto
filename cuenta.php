@@ -83,8 +83,7 @@
                   <input type="email" class="form-control" name="email2">
                 </div>
               </div>
-              
-              <input class="btn btn-primary btn-xs" type="submit" value="Guardar" value="Ocultar" onclick="ocultar()">
+
 			</form>
               </div>
             </div>
