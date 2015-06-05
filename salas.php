@@ -1,5 +1,10 @@
-<?php
- include 'top.php'
+<?php session_start();
+include 'conexion.php'; 
+ include 'top.php';
+ if(!isset($_SESSION['NomUser'])){
+		header('index.php');
+	}else{
+		$query="Select * from articulo where tipo=1";		 
 ?>
 
 <div class="row">
@@ -11,10 +16,8 @@
 	</div>
 </div>
 
-<?php include 'cargaArticulo.php'; ?>
-
-
-
-<?php
- include 'bottom.html'
-?>
+<?php 
+	}
+include 'cargaArticulo.php'; 
+ include 'bottom.html';
+ ?>

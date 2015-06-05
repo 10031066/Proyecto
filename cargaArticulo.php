@@ -1,4 +1,8 @@
-
+<?php
+$resultado = ejecutaQuery($query);
+		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
+for($i=0;$i<$resultado->num_rows;$i++){
+?>
 <div class="row">
 
 	<div class="col-md-4">
@@ -11,13 +15,11 @@
               	</div>
 
               	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Sala Esquinero Dimer</font></h4>
+                   <h4><font color="#DF3A01"><?php echo $fila[$i]['marca']?></font></h4>
       				<HR >
 
       				<P style="text-align: center;">
-			          <span style="color:#424242">$ 4,799<br>
-			           3 pagos desde <br>
-			           $ 1,973.83 
+			          <span style="color:#424242">$ <?php $fila[$i]['precio']?><br> 
 			         </P>
 
 			         <br><input class="btn btn-primary" type="submit" value="Comprar ahora" >
@@ -33,3 +35,5 @@
     </div>
           
 </div>
+
+<?php } ?>
