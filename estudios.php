@@ -1,5 +1,10 @@
-<?php
- include 'top.php'
+<?php session_start();
+	include 'conexion.php'; 
+	include 'top.php';
+ if(!isset($_SESSION['NomUser'])){
+		header('index.php');
+	}else{
+		$query="Select * from articulo where tipo=4";		 
 ?>
 
 <div class="row">
@@ -11,105 +16,8 @@
 	</div>
 </div>
 
-<div class="row">
-
-	<div class="col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-body">
-
-                <div class="col-md-12">
-                   <a href="Producto.php"><img src="img/sala1.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
-                   onmouseout="javascript:this.width=250;this.height=250"/>
-              	</div>
-
-              	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Estudio 1</font></h4>
-      				<HR >
-
-      				<P style="text-align: center;">
-			          <span style="color:#424242">$ 4,799<br>
-			           3 pagos desde <br>
-			           $ 1,973.83 
-			         </P>
-
-			         <input class="btn btn-primary" type="submit" value="Comprar Ahora" >
-
-              	</div>
-
-
-              </div>
-            </div>
-
-            <HR>
-
-    </div>
-
-    <div class="col-md-4">
-          <div class="panel panel-default">
-              <div class="panel-body">
-
-                <div class="col-md-12">
-                   <a href="Producto.php"><img src="img/sala2.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
-                   onmouseout="javascript:this.width=250;this.height=250"/>
-              	</div>
-
-              	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Oficina 2</font></h4>
-      				<HR >
-
-      				<P style="text-align: center;">
-			          <span style="color:#424242">$ 8,799<br>
-			           6 pagos desde <br>
-			           $ 1,973.83 
-			         </P>
-
-			         <input class="btn btn-primary" type="submit" value="Comprar Ahora" >
-
-              	</div>
-
-
-              </div>
-            </div>
-
-            <HR>
-
-    </div>
-
-    <div class="col-md-4">
-         <div class="panel panel-default">
-              <div class="panel-body">
-
-                <div class="col-md-12">
-                   <a href="Producto.php"><img src="img/sala3.jpg" width="250" onmouseover="javascript:this.height=500;this.width=500"  
-                   onmouseout="javascript:this.width=250;this.height=250"/>
-              	</div>
-
-              	<div class="col-md-12">
-                   <h4><font color="#DF3A01">Silla ejecutiva 3</font></h4>
-      				<HR >
-
-      				<P style="text-align: center;">
-			          <span style="color:#424242">$ 6,799<br>
-			           4 pagos desde <br>
-			           $ 1,699.83 
-			         </P>
-
-			         <input class="btn btn-primary" type="submit" value="Compra ahora" >
-
-              	</div>
-
-
-              </div>
-            </div>
-
-            <HR>
-    </div>
-          
-</div>
-
-
-
-
 <?php
- include 'bottom.html'
+	}
+	include 'cargaArticulo.php';
+ include 'bottom.html';
 ?>
