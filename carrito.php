@@ -14,7 +14,7 @@ include 'conexion.php';
 			$resultado = ejecutaQuery($query);
 			$fila = mysqli_fetch_array($resultado);
 			
-			$query ="Insert into carrito VALUES('".$_SESSION['user']."','".$_REQUEST['idArticulo']."','".$fila['marca']."','".$fila['fila']."')";
+			$query ="Insert into carrito VALUES('".$_SESSION['user']."','".$_REQUEST['idArticulo']."','".$fila['marca']."','".$fila['precio']."',1)";
 			ejecutaQuery($query);
 			echo $query;
 			
