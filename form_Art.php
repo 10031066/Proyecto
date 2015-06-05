@@ -37,6 +37,14 @@ include 'conexion.php';
       <input type="text" class="form-control" name="Marca">
     </div>
   </div>
+
+  <div class="form-group">
+       <label for="radio" class="col-lg-4 control-label">Tipo: </label>
+       <input type="radio" name="Tipo" value="1">Sala<BR>
+       <input type="radio"name="Tipo" value="2">Comedor<BR>
+       <input type="radio"name="Tipo" value="3">Recamaras<BR>
+       <input type="radio"name="Tipo" value="4">Estudio y oficina<BR>
+  </div>
   
   <div class="form-group">
     <label for="Descripcion" class="col-lg-2 control-label">Descripcion: </label>
