@@ -13,7 +13,7 @@
 
   <div class="row">
     <div class="col-md-2">
-          <label>Ingrese sus datos</label>
+          <font color="white">col-md-8</font>
     </div>
  <form action="registrar.php" method="POST">
     <div class="col-md-8">
@@ -94,7 +94,7 @@
     </div>
 </form>
     <div class="col-md-2">
-          <label>Ingrese sus datos</label>
+          <font color="white">col-md-8</font>
     </div>
 
   </div>
@@ -105,7 +105,9 @@
     </div>
 
     <div class="col-md-8">
-      <label>Ingrese captcha</label>
+      <?php
+        include 'captcha/captcha.php';
+      ?>
     </div>
 
     <div class="col-md-2">
