@@ -90,6 +90,12 @@
           </div>
 
           <div class="col-md-12">
+            <?php
+              include 'captcha/captcha.php';
+            ?>
+          </div>
+
+          <div class="col-md-12">
             <div class="col-md-5">
             <font color="white">Ingrese sus datos.......</font>
             </div>
