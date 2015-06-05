@@ -15,7 +15,7 @@ for($i=0;$i<$resultado->num_rows;$i++){
               	</div>
 
               	<div class="col-md-12">
-                   <h4><font color="#DF3A01"><?php echo $fila[$i]['marca']?></font></h4>
+                   <h4><font color="#DF3A01"><?php echo $resultado[$i]['marca']?></font></h4>
       				<HR >
 
       				<P style="text-align: center;">

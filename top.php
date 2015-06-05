@@ -133,8 +133,9 @@ document.getElementById('oculto').style.display = 'none';}
                                       <?php 
 												if(isset($_SESSION['user'])){
 													?>
-									            <li role="presentation" class="active"><a href="carrito.php" class="color-1"><img src="img/carrito.jpg" id="img1" width="35" height="15">Mi carrito <span class="badge">2</span></a></li>
-												      <li role="presentation" class="active"><a href="cuenta<?php if(isset($_SESSION['NomEmpresa'])) echo "_empresa"?>.php">Bienvenido <br>
+									    <?php if(isset($_SESSION['NomUser'])){?>        <li role="presentation" class="active"><a href="carrito.php" class="color-1"><img src="img/carrito.jpg" id="img1" width="35" height="15">Mi carrito <span class="badge">2</span></a></li>
+										<?php }?>
+													  <li role="presentation" class="active"><a href="cuenta<?php if(isset($_SESSION['NomEmpresa'])) echo "_empresa"?>.php">Bienvenido <br>
 													  <?php 
 															if(isset($_SESSION['NomUser'])){
 																echo $_SESSION['NomUser'];

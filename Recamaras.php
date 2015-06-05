@@ -1,7 +1,7 @@
 <?php session_start();
 	include 'conexion.php'; 
 	include 'top.php';
- if(!isset($_SESSION['NomUser'])){
+ if(!isset($_SESSION['user'])){
 		header('index.php');
 	}else{
 		$query="Select * from articulo where tipo=3";		 

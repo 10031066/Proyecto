@@ -3,7 +3,8 @@ include 'conexion.php';
  include 'top.php';
 	
 	if(!isset($_SESSION['NomUser'])){
-		header('index.php');
+				echo "<script type='text/javascript'>alert('No deberias estar aqui');</script>";
+		//header('index.php');
 	}else{
 		$query="Select * from carrito where idCte='".$_SESSION['user']."'";
 		$resultado = ejecutaQuery($query);
@@ -44,7 +45,7 @@ include 'conexion.php';
 </div>
 
 <?php
-	for(i=0;i<$resultado->num_rows;i++){
+	for($i=0;$i<$resultado->num_rows;$i++){
 
 ?>
 		<div class="row">
@@ -82,5 +83,6 @@ include 'conexion.php';
 
 
 <?php
+	}
  include 'bottom.html';
 ?>
