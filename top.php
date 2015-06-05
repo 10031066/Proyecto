@@ -169,7 +169,7 @@ document.getElementById('oculto').style.display = 'none';}
                         </div><!-- /.container-fluid -->
                         <div class="col-md-12">
 	    		<ul class="nav nav-tabs  nav-justified">
-			  	<li role="presentation" class="active"><a href="#"><img src="img/sucursales.jpg" id="img1" width="30" height="15">Sucursales</a></li>
+			  	<li role="presentation" class="active"><a href="sucursales.php"><img src="img/sucursales.jpg" id="img1" width="30" height="15">Sucursales</a></li>
 			  	
           <li role="presentation" class="dropdown "><a href="#" class="dropdown-toggle color-1" data-toggle="dropdown" role="button" aria-expanded="false">
           <img src="img/pedidos.jpg" id="img1" width="30" height="15">Vende con nosotros<span class="caret"></span></a>
