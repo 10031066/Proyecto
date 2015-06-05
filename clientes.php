@@ -79,15 +79,22 @@
             <input type="radio"name="genero" value="F">Female
           </div>
 
+              <div class="col-md-12">
+                <?php
+                  include 'captcha/captcha.php';
+                ?>
+              </div>
+
+
           <div class="col-md-12">
             <div class="col-md-4">
-            <label>Ingrese sus datos</label>
+            <font color="white">col-md-8</font>
             </div>
              <div class="col-md-4">
             <input class="btn btn-primary btn-lg" type="submit" value="Registrar">
             </div>
              <div class="col-md-4">
-            <label>Ingrese sus datos</label>
+            <font color="white">col-md-8</font>
             </div>
           </div>
 
@@ -102,12 +109,6 @@
   <div class="row">
     <div class="col-md-2">
            <font color="white">separacion</font>
-    </div>
-
-    <div class="col-md-8">
-      <?php
-        include 'captcha/captcha.php';
-      ?>
     </div>
 
     <div class="col-md-2">
