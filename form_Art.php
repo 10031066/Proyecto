@@ -67,23 +67,15 @@ include 'conexion.php';
           <input class="form-control" type="file" name="imagen" name="Imagen" required multiple>
           </div> 
           
-          <br>
-              <div class="col-md-12">
-                <?php
-                  include 'captcha/captcha1.php';
-                ?>
-              </div>
-          <br>
-          <br>
-<br>
-        <div class="col-lg-8">
-          <div class ="from-group">
-          <input
-            class="btn btn-primary"
-          type="submit" value="Guardar">
-</div>
-        
-        </div>
+          
+          <div class="col-md-4">
+            <input class="btn btn-primary btn-lg" type="submit" value="Registrar">
+            </div>
+
+             <div class="col-md-4">
+            <font color="white">col-md-8</font>
+            </div>
+          </div>
 		
 		</form>
         </div> 
