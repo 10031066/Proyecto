@@ -75,8 +75,8 @@
 
           <div class="col-md-12">
           <label for="radio" class="col-lg-6 control-label">sexo: </label>
-          <input type="radio" name="genero" value="M">Male<BR>
-            <input type="radio"name="genero" value="F">Female
+          <input type="radio" name="genero" value="M">Hombre<BR>
+            <input type="radio"name="genero" value="F">Mujer
           </div>
 
               <div class="col-md-12">
@@ -90,6 +90,8 @@
             <div class="col-md-4">
             <font color="white">col-md-8</font>
             </div>
+
+            
              <div class="col-md-4">
             <input class="btn btn-primary btn-lg" type="submit" value="Registrar">
             </div>
