@@ -3,7 +3,9 @@ include 'conexion.php';
  include 'top.php';
  
 	if(!isset($_SESSION['NomEmpresa'])){
-		echo "<script type='text/javascript'>alert('No deberias estar aqui');</script>";
+		echo "<script language='JavaScript'>"; 
+    echo "location = 'index.php'";
+    echo "</script>";
 	}else{
 		if(isset($_FILES['imagen'])){
 			$target_path = "img\\articulos\\";

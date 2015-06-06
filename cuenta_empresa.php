@@ -11,7 +11,9 @@
 		 actualizaPass($_REQUEST['antigua'],$_REQUEST['email1'],$_REQUEST['email2'],"empresa");
 	 }
 	}else{
-		echo "<script type='text/javascript'>alert('No Deberias estar aqui!!');</script>";
+		echo "<script language='JavaScript'>"; 
+    echo "location = 'index.php'";
+    echo "</script>";
 	}
 
 ?>

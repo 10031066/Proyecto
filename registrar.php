@@ -8,7 +8,9 @@
 	}else if(isset($_REQUEST['NombreVendedor'])){
 		registraEmpresa($_REQUEST['NombreVendedor'],$_REQUEST['Direccion'],$_REQUEST['telefono'],$_REQUEST['email1'],$_REQUEST['email2']);
 	}else{
-		echo "No deberias estar aqui";
+		echo "<script language='JavaScript'>"; 
+		echo "location = 'index.php'";
+	    echo "</script>";
 	}
 	
 	include 'bottom.html';

@@ -46,7 +46,7 @@
       </div>
 
       <div class="col-md-8">
-		<form action="registrar.php" method="POST">
+		<form action="validarempresa.php" method="POST">
 
         
           <div class="col-md-12">
@@ -58,6 +58,12 @@
           <label class="col-lg-6 control-label">Nombre de la empresa: </label>
           <div class="col-lg-6">
           <input type="text" class="form-control" name="NombreVendedor">
+          <?php
+                        error_reporting (E_ALL ^ E_NOTICE);
+                    if($_GET['error']=='1'){
+                echo '<font color="#FF0000">Campo nombre de la empresa vacio</font><br/>';
+                }?>
+          <br>
           </div>
           </div>
 
@@ -65,6 +71,12 @@
           <label class="col-lg-6 control-label">Direccion de la empresa: </label>
           <div class="col-lg-6">
           <input type="text" class="form-control" name="Direccion">
+          <?php
+                        error_reporting (E_ALL ^ E_NOTICE);
+                    if($_GET['error']=='2'){
+                echo '<font color="#FF0000">Campo direccion vacio</font><br/>';
+                }?>
+          <br>
           </div>
           </div>
 
@@ -72,6 +84,12 @@
           <label class="col-lg-6 control-label">Telefono de la empresa: </label>
           <div class="col-lg-6">
           <input type="text" class="form-control" name="telefono">
+          <?php
+                        error_reporting (E_ALL ^ E_NOTICE);
+                    if($_GET['error']=='3'){
+                echo '<font color="#FF0000">Campo telefono vacio</font><br/>';
+                }?>
+          <br>
           </div>
           </div>
 
@@ -79,6 +97,12 @@
           <label class="col-lg-6 control-label">Email de la empresa: </label>
           <div class="col-lg-6">
           <input type="text" class="form-control" name="email1">
+          <?php
+                        error_reporting (E_ALL ^ E_NOTICE);
+                    if($_GET['error']=='4'){
+                echo '<font color="#FF0000">Campo email vacio</font><br/>';
+                }?>
+          <br>
           </div>
           </div>
 			
@@ -86,6 +110,12 @@
           <label class="col-lg-6 control-label">Repetir email: </label>
           <div class="col-lg-6">
           <input type="text" class="form-control" name="email2">
+          <?php
+                        error_reporting (E_ALL ^ E_NOTICE);
+                    if($_GET['error']=='5'){
+                echo '<font color="#FF0000">DEbe verificar el correo</font><br/>';
+                }?>
+          <br>
           </div>
       </div>
 

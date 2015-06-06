@@ -2,8 +2,9 @@
 	include 'conexion.php';
 	include 'top.php';
 	if(!(isset($_SESSION['NomUser']) and isset($_GET['id']))){
-				echo "<script type='text/javascript'>alert('No deberias estar aqui');</script>";
-		//header('index.php');
+				echo "<script language='JavaScript'>"; 
+  echo "location = 'index.php'";
+  echo "</script>";
 	}else{
 		$query="Select * from articulo where id='".$_GET['id']."'";
 		$resultado = ejecutaQuery($query);

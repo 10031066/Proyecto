@@ -3,8 +3,9 @@ include 'conexion.php';
  include 'top.php';
 	
 	if(!isset($_SESSION['NomUser'])){
-				echo "<script type='text/javascript'>alert('No deberias estar aqui');</script>";
-		//header('index.php');
+				echo "<script language='JavaScript'>"; 
+				echo "location = 'index.php'";
+			  echo "</script>";
 	}else{
 		//echo $_REQUEST['idArticulo'];
 		if(isset($_REQUEST['idArticulo'])){
