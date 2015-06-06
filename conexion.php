@@ -136,7 +136,7 @@
 	require_once 'PHPMailer-master/PHPMailerAutoload.php';
 	 $mail = new PHPMailer(); 
 	 
-    $mail -> From = 'greedsama23@gmail.com';
+    $mail -> From = 'adrii_jmtz@hotmail.com';
 	$mail -> FromName = "Foo";
 	$mail -> AddAddress ($destino);
 	$mail -> Subject = "Test";
@@ -146,8 +146,8 @@
 	$mail->IsSMTP();
 	$mail->Host = 'tls://smtp.gmail.com:587';
 	$mail->SMTPAuth = true;
-	$mail->Username = 'greedsama23@gmail.com';
-	$mail->Password = 'Irredimible12';
+	$mail->Username = 'adrii_jmtz@hotmail.com';
+	$mail->Password = '';
       
     if(!$mail->Send()) {
         echo 'Error: ' . $mail->ErrorInfo;

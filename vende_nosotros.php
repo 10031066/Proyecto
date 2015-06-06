@@ -131,36 +131,32 @@
          <div class="col-md-6">
 
          <div>
-           <h4><font color="#DF3A01" >¿POR QUE VENDER MUEBLES EL CARPINTERO? <button onclick="mostrar()">   <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button> </font></h4>
+           <h4><font color="#DF3A01" >¿POR QUE VENDER MUEBLES EL CARPINTERO?   <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button> </font></h4>
 
-           <div id='oculto' style='display:none;' >
            <h4><font color="#585858"><p align="justify">Puedes cargar en nuestra página todos los productos que quieres, no se cobra nada por creación de la cuenta ni por publicación de producto. Se cobrará únicamente una comisión por cada venta realizada.</P>
            </font></h4>
            </div>
-          </div>
 
            <HR>
 
            <div>
-             <h4><font color="#DF3A01">¿CÓMO FUNCIONA EL PROCESO DE ENVÍOS? <button onclick="mostrar()">   <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button>  </font></h4>
+             <h4><font color="#DF3A01">¿CÓMO FUNCIONA EL PROCESO DE ENVÍOS?   </font></h4>
 
-             <div id='oculto' style='display:none;' >
            <h4><font color="#585858"><p align="justify">Todos los productos que se ofrecen en Linio deben ser enviados por medio de las paqueterías autorizadas (DHL, Fedex y Estafeta). El vendedor NO puede utilizar unidades propias para repartir tus productos. Tampoco está permitido el modelo “ordena y recoge” en punto de venta. Si decides usar el convenio de Linio, se te otorgará acceso al portal del proveedor logístico para que generes tus propias guías a costos preferenciales.</P>
            </font></h4>
-           </div>
             </div>
 
             <HR>
            
            <div>
-           <h4><font color="#DF3A01">¿CUÁNDO RECIBIRÉ LOS PAGOS POR MIS VENTAS? <button onclick="mostrar()">   <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button>  </font></h4>
+           <h4><font color="#DF3A01">¿CUÁNDO RECIBIRÉ LOS PAGOS POR MIS VENTAS?    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button>  </font></h4>
 
-            <div id='oculto' style='display:none;' >
+
            <h4><font color="#585858"><p align="justify">Recibirás el acumulado de las ventas de tus productos dentro de un período de 7 días naturales a partir del día de entrega al cliente. Todos los viernes se hace el corte de venta semanal en Linio, y por lo tanto tú recibirás el pago 7 días después. Los pagos se realizan vía transferencia electrónica.
            </P>
            </font></h4>
            </div>
-          </div>
+
 
       </div>
 		

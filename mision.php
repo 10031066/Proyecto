@@ -50,36 +50,37 @@
     <h4><font color="#DF3A01">---------------- Valores ------------------</font></h4>
       <HR >
       <P style="text-align: justify;">
-          <span style="color:#424242">Conducción Clara<br>
+            <span style="color:#DF3A01" >Conducción Clara<br>
+              <span style="color:#424242">
 Actuamos en concordancia plena con lo que establecimos.<br><br>
 
-Compromiso y Responsabilidad<br>
-Aceptamos el rol que nos toca y nos dedicamos a pleno a ello.<br><br>
+<span style="color:#DF3A01" >Compromiso y Responsabilidad<br>
+<span style="color:#424242">Aceptamos el rol que nos toca y nos dedicamos a pleno a ello.<br><br>
 
-Trabajo en equipo<br>
-El éxito de nuestra organización lo construimos juntos.<br><br>
+<span style="color:#DF3A01" >Trabajo en equipo<br>
+<span style="color:#424242">El éxito de nuestra organización lo construimos juntos.<br><br>
 
-Productividad<br>
-Mientras  más eficientes y eficaces somos en la utilización de los recursos,  tanto  más productivos y competitivos podemos ser.<br><br>
+<span style="color:#DF3A01" >Productividad<br>
+<span style="color:#424242">Mientras  más eficientes y eficaces somos en la utilización de los recursos,  tanto  más productivos y competitivos podemos ser.<br><br>
 
-Aprendizaje<br>
-Creemos en la mejora continua nutrida con la experiencia diaria.<br><br>
+<span style="color:#DF3A01" >Aprendizaje<br>
+<span style="color:#424242">Creemos en la mejora continua nutrida con la experiencia diaria.<br><br>
 
-Superación<br>
-Tenemos el compromiso de mejorar cada día lo que hacemos.<br><br>
+<span style="color:#DF3A01" >Superación<br>
+<span style="color:#424242">Tenemos el compromiso de mejorar cada día lo que hacemos.<br><br>
 
-Seguridad<br>
-Dado el alto nivel de importancia otorgado por las empresas y familias a los estándares de seguridad, contamos con una cultura organizacional que es capaz de sostener procesos seguros, tanto para las personas como para los activos y bienes de la empresa.<br><br>
+<span style="color:#DF3A01" >Seguridad<br>
+<span style="color:#424242">Dado el alto nivel de importancia otorgado por las empresas y familias a los estándares de seguridad, contamos con una cultura organizacional que es capaz de sostener procesos seguros, tanto para las personas como para los activos y bienes de la empresa.<br><br>
 
-Calidad<br>
-Este sea el principal valor agregado de nuestro producto, es parte de los procesos y en las actitudes del personal. Próximamente se creará un Departamento de Control de Calidad.<br><br>
+<span style="color:#DF3A01" >Calidad<br>
+<span style="color:#424242">Este sea el principal valor agregado de nuestro producto, es parte de los procesos y en las actitudes del personal. Próximamente se creará un Departamento de Control de Calidad.<br><br>
 
-Honestidad<br>
-Nuestro personal es reconocido por la honestidad en su proceder, sobre todo en el tema de los negocios y manejo de los materiales e insumos.
+<span style="color:#DF3A01" >Honestidad<br>
+<span style="color:#424242">Nuestro personal es reconocido por la honestidad en su proceder, sobre todo en el tema de los negocios y manejo de los materiales e insumos.
 Trabajo en Equipo.- Pilar de vital importancia para el correcto y armónico funcionamiento de las diferentes unidades de una empresa. Así se mantienen un enfoque en la búsqueda de soluciones conjuntas, bajo el concepto del “Ganar – Ganar”.<br><br>
 
-Responsabilidad<br>
-La empresa es reconocida por la responsabilidad en el cumplimiento de los compromisos asumidos con los clientes, tales como la calidad, oportunidad en la entrega y asumiendo las garantías en caso de que esta se presente.<br><br>
+<span style="color:#DF3A01" >Responsabilidad<br>
+<span style="color:#424242">La empresa es reconocida por la responsabilidad en el cumplimiento de los compromisos asumidos con los clientes, tales como la calidad, oportunidad en la entrega y asumiendo las garantías en caso de que esta se presente.<br><br>
 
 </P>
 

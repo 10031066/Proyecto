@@ -24,9 +24,9 @@
                   </ol>
                   <!-- Carousel items -->
                   <div class="carousel-inner">
-                    <div class="active item"><img  src="img/img4.jpg" width="3500" height="500" alt="banner1"  /></div>
-                    <div class="item"><img  src="img/img3.jpg" width="1500" height="300"  alt="banner2" /></div>
-                    <div class="item"><img  src="img/img2.jpg" width="2000" height="300"  alt="banner3" /></div>
+                    <div class="active item"><img  src="img/img2.jpg" width="3500" height="500" alt="banner1"  /></div>
+                    <div class="item"><img  src="img/img4.jpg" width="1500" height="300"  alt="banner2" /></div>
+                    <div class="item"><img  src="img/img3.jpg" width="2000" height="300"  alt="banner3" /></div>
 
                   </div>
                   <!-- Carousel nav -->
