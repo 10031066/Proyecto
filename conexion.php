@@ -12,6 +12,33 @@
 			$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 			
 			echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
+			error_reporting(E_ALL);
+					require("PHPmailer_5.2.4/class.phpmailer.php");
+
+					$mail = new PHPMailer();
+
+					$mail->IsSMTP(); 
+					$mail->SMTPDebug = 2;
+					$mail->From = "correo.prueba07.14@gmail.com";
+					$mail->FromName = "El Carpintero";
+					$mail->Host = "smtp.gmail.com";
+					$mail->SMTPSecure = "ssl";
+					$mail->Port = 465;
+					$mail->SMTPAuth = true;
+					$mail->Username ="correo.prueba07.14@gmail.com";
+					$mail->Password = "860karlita100%";
+				    $mail->AddAddress($fila['mailcte'],$nombre);
+				    $mail->AddReplyTo("correo.prueba07.14@gmail.com","Karla");
+				    $mail->WordWrap = 50;
+
+				    $mail->IShtml(true);
+				    $mail->subjetct='hola karlita si funciono';
+				    $mail->Body ="Password: ".$pass."   Usuario: ".$fila["id"];
+
+				    if($mail->Send()) {}
+				    else {}
+
+		
 		}else{
 			echo "Ambas direcciones de correo son distintas\n";
 		}
@@ -33,7 +60,35 @@
 			
 			//enviaCorreo($email1,$fila["idcte"],$pass);
 			
-			echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
+			//echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
+
+
+						error_reporting(E_ALL);
+				require("PHPmailer_5.2.4/class.phpmailer.php");
+
+				$mail = new PHPMailer();
+
+				$mail->IsSMTP(); 
+				$mail->SMTPDebug = 2;
+				$mail->From = "kar.erika.07.14@gmail.com";
+				$mail->FromName = "El Carpintero";
+				$mail->Host = "smtp.gmail.com";
+				$mail->SMTPSecure = "ssl";
+				$mail->Port = 465;
+				$mail->SMTPAuth = true;
+				$mail->Username ="kar.erika.07.14@gmail.com";
+				$mail->Password = "860karlita100%";
+			    $mail->AddAddress($fila['mailcte'],$nombre);
+			    $mail->AddReplyTo("kar.erika.07.14@gmail.com","Karla");
+			    $mail->WordWrap = 50;
+
+			    $mail->IShtml(true);
+			    $mail->subjetct='hola karlita si funciono';
+			    $mail->Body ="Password: ".$pass."   Usuario: ".$fila["id"];
+
+			    if($mail->Send()) {}
+			    else {}
+
 		}else{
 			echo "Ambas direcciones de correo son distintas\n";
 		}
@@ -131,7 +186,7 @@
 		}
 		return $randstring;
 	}
-	
+	/*
 	function enviaCorreo($destino,$usuario,$pass){
 	require_once 'PHPMailer-master/PHPMailerAutoload.php';
 	 $mail = new PHPMailer(); 
@@ -155,5 +210,12 @@
 	else {
 		echo 'Mail enviado!';
 	}
-	}
+	}*/
+
+
+
+
+	
+    
+
 ?>
