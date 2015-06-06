@@ -73,7 +73,7 @@
 
 	<div class="row">
 		<div class="col-md-12">
-    <h4><font color="silver">---------------- LAS MEJORES OFERTAS ------------------</font></h4>
+    <h4><font color="#DF3A01">---------------- LAS MEJORES OFERTAS ------------------</font></h4>
       <HR >
 		</div>
 
@@ -117,7 +117,7 @@
 
 	<div class="row">
 		<div class="col-md-12">
-    <h4><font color="silver">---------------- TIENDAS OFICIALES ------------------</font></h4>
+    <h4><font color="#DF3A01">---------------- TIENDAS OFICIALES ------------------</font></h4>
       <HR >
 		<ul class="breadcrumb">
           <li><img src="img/tiendas/coppel.jpg" id="img1" width="150" height="100"></a><span class="divider"></span></li>
@@ -142,7 +142,7 @@
 
 	<div class="row">
             <div class="col-md-12">
-            <h4><font color="silver">---------------- MARCAS OFICIALES ------------------</font></h4>
+            <h4><font color="#DF3A01">---------------- MARCAS OFICIALES ------------------</font></h4>
       <HR >
 
                <nav class="navbar navbar-default" role="navigation">
