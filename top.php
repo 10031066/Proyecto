@@ -117,9 +117,9 @@ document.getElementById('oculto').style.display = 'none';}
      	<div class="col-md-4">
 	    		<a href="index.php"><img src="img/logo1.png"alt="..." id="img1" width="250" height="300" class="img-circle"></a>
 		</div>
-    <div class="col-md-2"></div>
+ 
 
-         <div class="col-md-6">
+         <div class="col-md-8">
             <div class="panel panel-default">
 
               <div class="panel-body" align="right">
@@ -146,6 +146,9 @@ document.getElementById('oculto').style.display = 'none';}
 										<?php		}else{
 												  
 											  ?>
+
+                        <li role="presentation" class="active"><a href="contactanos.php"><span style="color:#424242">Contactanos</a></li>
+
 									  <li class="dropdown "><a href="#" class="dropdown-toggle color-1" data-toggle="dropdown" role="button" aria-expanded="false">Iniciar sesion <span class="caret"></span></a>
                                           <ul class="dropdown-menu" role="menu" class="ca-menu" id="desplegable">
                                               
@@ -168,6 +171,7 @@ document.getElementById('oculto').style.display = 'none';}
                         </div><!-- /.container-fluid -->
                         <div class="col-md-12">
 	    		<ul class="nav nav-tabs  nav-justified">
+
 			  	<li role="presentation" class="active"><a href="sucursales.php"><img src="img/sucursales.jpg" id="img1" width="30" height="15">Sucursales</a></li>
 			  	
           <li role="presentation" class="dropdown "><a href="#" class="dropdown-toggle color-1" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -192,6 +196,8 @@ document.getElementById('oculto').style.display = 'none';}
                                          </ul>
 										 <?php } ?>
                                      </li>
+
+          <li role="presentation" class="active"><a href="mision.php"><span style="color:#424242">Quienes somos?</a></li>
 
 			  	</ul>
 
