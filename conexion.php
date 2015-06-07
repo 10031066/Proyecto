@@ -60,7 +60,7 @@
 			
 			//enviaCorreo($email1,$fila["idcte"],$pass);
 			
-			echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
+			//echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
 
 
 						error_reporting(E_ALL);
