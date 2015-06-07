@@ -11,7 +11,7 @@
 			
 			$fila = $resultado->fetch_array(MYSQLI_ASSOC);
 			
-			//echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
+			echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
 			
 				error_reporting(E_ALL);
 				require("PHPmailer_5.2.4/class.phpmailer.php");
@@ -60,7 +60,7 @@
 			
 			//enviaCorreo($email1,$fila["idcte"],$pass);
 			
-			//echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
+			echo "Usuario: ".$fila["id"]."<br>Pass: ".$pass;
 
 
 						error_reporting(E_ALL);
