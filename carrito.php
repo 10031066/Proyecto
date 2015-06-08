@@ -2,12 +2,6 @@
 include 'conexion.php'; 
  include 'top.php';
 	
-	if(!isset($_SESSION['NomUser'])){
-				echo "<script language='JavaScript'>"; 
-				echo "location = 'index.php'";
-			  echo "</script>";
-	}else{
-		//echo $_REQUEST['idArticulo'];
 		if(isset($_REQUEST['idArticulo'])){
 			//echo 'hola';
 			$query = "Select * from articulo where id='".$_REQUEST['idArticulo']."'";
@@ -15,13 +9,13 @@ include 'conexion.php';
 			$resultado = ejecutaQuery($query);
 			$fila = mysqli_fetch_array($resultado);
 			
-			$query ="Insert into carrito VALUES('".$_SESSION['user']."','".$_REQUEST['idArticulo']."','".$fila['marca']."','".$fila['precio']."',1)";
+			$query ="Insert into carrito VALUES('".$_REQUEST['idArticulo']."','".$fila['marca']."','".$fila['precio']."',1)";
 			ejecutaQuery($query);
 			echo $query;
 			
 		}
 		
-		$query="Select * from carrito where idCte='".$_SESSION['user']."'";
+		$query="Select * from carrito";
 		$resultado = ejecutaQuery($query);
 			
 ?>
@@ -89,6 +83,15 @@ include 'conexion.php';
 
 	<div class="col-md-4">
 		<input class="btn btn-primary" type="submit" value="Pagar" >
+		<?
+ if(!isset($_SESSION['user'])){
+		echo "No deberias estar aqui";
+	}else{
+		$query="Select * from carrito where idCte='".$_SESSION['user']."'";
+		$resultado = ejecutaQuery($query);
+	
+?>
+
 	</div>
 
 	<div class="col-md-4">
@@ -97,7 +100,6 @@ include 'conexion.php';
 </div>
 
 
-<?php
-	}
+<?php	
  include 'bottom.html';
 ?>

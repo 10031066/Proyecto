@@ -135,19 +135,13 @@ document.getElementById('oculto').style.display = 'none';}
 									    <?php if(isset($_SESSION['NomUser'])){?>        <li role="presentation" class="active"><a href="carrito.php" class="color-1"><img src="img/carrito.jpg" id="img1" width="35" height="15">Mi carrito <span class="badge">2</span></a></li>
 										<?php }?>
 													  <li role="presentation" class="active"><a href="cuenta<?php if(isset($_SESSION['NomEmpresa'])) echo "_empresa"?>.php">Bienvenido <br>
-													  <?php 
-															if(isset($_SESSION['NomUser'])){
-																echo $_SESSION['NomUser'];
-															}else if($_SESSION['NomEmpresa']){
-																echo $_SESSION['NomEmpresa'];
-															}
-													  ?></a></li>
+													  </a></li>
                         <a href="index.php?salir=si">Salir</a>
 										<?php		}else{
 												  
 											  ?>
 
-                        <li role="presentation" class="active"><a href="contactanos.php"><span style="color:#424242">Contactanos</a></li>
+                        <li role="presentation" class="active"><a href="contactanos.php"><img src="img/Contactenos.gif" id="img1" width="90" height="150"></a></li>
 
 									  <li class="dropdown "><a href="#" class="dropdown-toggle color-1" data-toggle="dropdown" role="button" aria-expanded="false">Iniciar sesion <span class="caret"></span></a>
                                           <ul class="dropdown-menu" role="menu" class="ca-menu" id="desplegable">
@@ -197,7 +191,7 @@ document.getElementById('oculto').style.display = 'none';}
 										 <?php } ?>
                                      </li>
 
-          <li role="presentation" class="active"><a href="mision.php"><span style="color:#424242">Quienes somos?</a></li>
+          <li role="presentation" class="active"><a href="mision.php"><img src="img/conocenos.gif" id="img1" width="90" height="150"></a></li>
 
 			  	</ul>
 

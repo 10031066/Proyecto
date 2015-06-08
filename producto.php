@@ -1,11 +1,7 @@
 <?php session_start(); 
 	include 'conexion.php';
 	include 'top.php';
-	if(!(isset($_SESSION['NomUser']) and isset($_GET['id']))){
-				echo "<script language='JavaScript'>"; 
-  echo "location = 'index.php'";
-  echo "</script>";
-	}else{
+
 		$query="Select * from articulo where id='".$_GET['id']."'";
 		$resultado = ejecutaQuery($query);
 		$fila = $resultado->fetch_array(MYSQLI_ASSOC);
@@ -79,6 +75,5 @@
 
 
 <?php
-	}
  include 'bottom.html';
 ?>
