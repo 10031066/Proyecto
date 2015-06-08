@@ -45,7 +45,7 @@ include 'conexion.php';
 	<div class="form-group">
 	    <label for="Mensaje" class="col-lg-2 control-label">Mensaje: </label>
 	    <div class="col-lg-4">
-	      <type="textarea" rows="10" cols="40" class="form-control" name="Mensaje">
+	      <input type="text" class="form-control" name="Mensaje">
 	    </div>
 	  </div>
 
