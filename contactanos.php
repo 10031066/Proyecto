@@ -56,7 +56,7 @@ include 'conexion.php';
      </div>	 
 
      <div class="col-md-4">
-            <input class="btn btn-primary btn-sm" type="submit" value="Registrar">
+            <input class="btn btn-primary btn-sm" type="submit" value="Enviar">
             </div> 
 
   </div>
