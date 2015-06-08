@@ -28,7 +28,7 @@ for($i=0;$i<$resultado->num_rows;$i++){
               	</div>
               </div>
             </div>
-            <HR>
+            
     </div>
 </div>
 
